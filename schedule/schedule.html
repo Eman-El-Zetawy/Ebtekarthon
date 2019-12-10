@@ -5,21 +5,75 @@
           <meta charset="UTF-8"> 
           <link  type="text/css" rel="stylesheet"  href = "schedule.css" />
            <meta name ="viewport" content="width=device-width,initial-scale=1.0">
-           <!-- <link rel="shortcut icon" type="image/x-icon" href="icon right.png" > -->
            <meta http-equiv="X-UA-Compatible" content="ie=edge">
         </head>
         <body>
+          <div class = "conter" >
             <div >SCHEDULE </div>
-            <div
-                <div id="outbox" class="outbox">
-                <div id="inbox" class="inbox">
-               <svg style=" float: left; padding-left:5px"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-                   <input  name="text" type="text" id ="input" class="input" placeholder=" Type Your todo list "   />
-                   <span id= "icon-add" class= "icon-add"></span>
-                </div>
-                <div id="div">
-                </div>
-                   </div>
+                <div >
+                 <span >Title Schedule </span> <br>
+                   <input  name="text" type="text" id ="a1" class="a1" placeholder=" Title Schedule  " />
+                   <p   id = "e1"></p>
+                 <hr>
+              </div>
+   <div  class="page">
+              <div >   create 
+                <span > days </span> , <span > month </span><br>
+                <select  id="o1"> 
+                    <option value="0">Day</option>
+                    <option value="1">Sunday</option>
+                    <option value="2">Monday</option>
+                    <option value="3">Tuesday </option>
+                    <option value="4">Wednesday</option>
+                    <option value="5">Thursday</option>
+                    <option value="6">Friday</option>
+                    <option value="7">Saturday</option>
+                      </select>
+                <input  name="text" type="date" id ="a2"  class="a2" />
+                <p id="e2"></p><hr>
+                
+            </div>
+<div >
+    <span >create  Event in this day  </span><br>
+
+    <span >time </span><br>
+        <input name="usr_time"  type="time" id ="a3"  class="a3"   />
+            <p id="e3"></p>
+            <span > title </span><br> 
+            <input  name="text" type="text" id ="a4"  class="a4"   placeholder="  Title This  Event " />
+            <p id="e4"></p>
+            <span > icon </span><br> 
+            <input  name="text" type="text" id ="a5"  class="a5"   placeholder=" Icon Of This Event  " />
+            <p id="e5"></p><hr>
+        </div>
+
+              <div><button  id="b1">save</button>
+              <button id="b2"> add event </button></div>
+         </div>     
+              <div  class = "page">
+              How to display the page user <br> 
+               day ,  month <br> 
+              <select  id="o2"> 
+                  <option value="0" >Day</option>
+              <option value="1">Sunday</option>
+              <option value="2">Monday</option>
+              <option value="3">Tuesday </option>
+              <option value="4">Wednesday</option>
+              <option value="5">Thursday</option>
+              <option value="6">Friday</option>
+              <option value="7">Saturday</option>
+                </select>
+               
+                <input  name="text" type="date" id ="a6"  class="a2"  />
+                          <p id="e6"></p>
+                <button id="b3" class="b3"> show events in this day  </button>
+                  <div  id="list">
+                <ul><li>  THINK  add </li></ul>
+                   
+                  </div>
+               <button  id="b4">add day save </button>
+            </div> 
+          </div>
            <script src="schedule.js"></script>
     </body>
 </html>
