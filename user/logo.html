@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>LOGO</title>
+</head>
+<style>
+	*{
+		margin: 0 auto;
+		box-sizing: border-box;
+		margin-top: 60px;
+		
+	}
+	input#file-input{
+		display: none;
+	}
+	input#file-input + label {
+		border-color: #9cf44e;
+		padding: 8px;
+		color: #999;
+		margin-left: 700px;
+		border: 2px solid #9ec3ff;
+		border-radius: 9px;
+		background-color: #defbc4;
+	
+	}
+	input#file-input + label:hover {
+		background-color: #b2f675;
+		border-color: #6ac3bb;
+		box-shadow: 2px 2px 50px #6ac3bb;
+		color: black;
+		cursor: pointer;
+	}
+	</style>
+<body>
+  <div class="countainer">
+  	<div class="row">
+  		<div class="coi-md-12">
+  			<h1 class="text-center" style="font-weight: bold">Upload your Logo</h1>
+  			<h1 class="text-center" style="color: gray; font-family: sans-serif;">
+  				<span style="#1565c0;">Ebtekarthon</span>
+  			</h1>
+  			
+  		</div>
+  	</div>
+  </div>
+  <input type="file" id="file-input">
+  <label for="file-input">
+  	<i class="glyphicon glyphicon-open"></i>
+  	&nbsp;Chose a Logo..
+  </label>
+  <span>
+  	<strong style="margin-left: 20px;">Chosen Logo:</strong>
+  	<span id="file-name" style="color: gray">None.</span>
+  </span>
+  <script>
+	const inputFile = document.getElementById('file-input');
+	const fileNameField = document.getElementById('file-name');
+	  inputFile.addEventListener('change', (event) => {
+		  const uploadFileName = event.target.files[0].name;
+		  fileNameField.textContent = uploadFileName;
+	  })
+	
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
