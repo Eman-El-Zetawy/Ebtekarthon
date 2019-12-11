@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+        <title>Schedule</title>
+        <link  type="text/css" rel="stylesheet"  href = "schedule.css" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<style >
+/*------------------------------------------------- */
+/* =  General */
+/*------------------------------------------------- */
+body {
+  height: 100%;
+  margin: 0px;
+  color: #5f6368;
+}
+
+html {
+  height: 100%;
+}
+#container {
+  overflow: hidden;
+  opacity: 0; }
+
+#container.active {
+  opacity: 1; }
+  .paragraph, section.register-section .register-box #register-form .subcribe-bx span, .article-box span, a.more-btn, .conference-features .center-area a, .about-event-box a, section.schedule-section3 .schedule-box .schedule-block .schedule-speakers ul.speaker-list li span, section.speaking-single .single-box .single-image a, section.blog-section .blog-box .blog-post span.date-comments, section.blog-section .blog-box .blog-post ul.post-tags li, .pagination-box a.prev,
+.pagination-box a.next, section.news-section .news-box .news-post span, section.news-section2 .blog-post span.date-comments, p {
+  font-size: 18px;
+  color: #6c7a89;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 0 10px; }
+ 
+  .title-section {
+  margin-bottom: 40px; }
+
+  .title-section h1 {
+    padding-bottom: 25px;
+    position: relative; }
+    .title-section.white-style h1 {
+  color: #ffffff; }
+
+.title-section.white-style h1:after {
+  background: #fff; }
+  .title-section.white-style p, .title-section.white-style span {
+  color: #cccccc;  
+  }
+  
+  /* --------------------------------------------------------------------------------------*/
+/*------------------------------------------------- */
+/* =  schedule section */
+/*------------------------------------------------- */
+
+section.schedule-section {
+  background: #2b2b2c; }
+  section.schedule-section .schedule-box {
+    padding: 100px 0;
+    background: url("../images/dev6.png") center top repeat-x; }
+    section.schedule-section .schedule-box .title-section h1 {
+      margin-bottom: 30px; }
+    section.schedule-section .schedule-box .schedule-block {
+      padding: 30px;
+      margin-top: 30px;
+      background: #fff;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      border-radius: 10px; }
+      section.schedule-section .schedule-box .schedule-block h2 {
+        color: #5649c0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #5649c0; }
+      section.schedule-section .schedule-box .schedule-block ul.schedule-list li {
+        display: block;
+        padding-bottom: 20px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #e4e2f4; }
+        section.schedule-section .schedule-box .schedule-block ul.schedule-list li span.time {
+          display: block;
+          color: #2ecc71;
+          font-size: 18px;
+          font-weight: 300;
+          font-family: "Rubik", sans-serif;
+          margin: 0 0 15px; }
+        section.schedule-section .schedule-box .schedule-block ul.schedule-list li img {
+          width: 40px;
+          height: auto;
+          float: left;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%; }
+        section.schedule-section .schedule-box .schedule-block ul.schedule-list li .schedule-cont {
+          margin-left: 70px;
+          margin-top: -3px; }
+          section.schedule-section .schedule-box .schedule-block ul.schedule-list li .schedule-cont p {
+            font-weight: 400;
+            margin-bottom: 0;
+            line-height: 26px; }
+          section.schedule-section .schedule-box .schedule-block ul.schedule-list li .schedule-cont p.schedule-auth {
+            font-style: italic;
+            font-family: "Lora", serif; }
+            section.schedule-section .schedule-box .schedule-block ul.schedule-list li .schedule-cont p.schedule-auth span {
+              color: #5649c0; }
+      section.schedule-section .schedule-box .schedule-block ul.schedule-list li:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none; }
+      section.schedule-section .schedule-box .schedule-block ul.schedule-list li.time-off-item {
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 30px; }
+        section.schedule-section .schedule-box .schedule-block ul.schedule-list li.time-off-item i {
+          display: block;
+          float: left;
+          font-size: 36px;
+          color: #5649c0; }
+        section.schedule-section .schedule-box .schedule-block ul.schedule-list li.time-off-item span.time-off {
+          display: block;
+          color: #5649c0;
+          font-size: 18px;
+          font-family: "Rubik", sans-serif;
+          margin-left: 70px;
+          line-height: 36px;
+          margin-top: 17px; }
+    section.schedule-section .schedule-box .schedule-text-ban {
+      text-align: center;
+      padding-top: 40px; }
+      section.schedule-section .schedule-box .schedule-text-ban p {
+        color: #999999;
+        margin-bottom: 20px; }
+        section.schedule-section .schedule-box .schedule-text-ban p span {
+          color: #2ecc71; }
+      section.schedule-section .schedule-box .schedule-text-ban a.default-button {
+        padding: 11px 60px; }
+
+section.schedule-section2 {
+  padding-top: 80px;
+  background: #f9fafb; }
+  section.schedule-section2 .title-section p {
+    max-width: 940px;
+    margin: 0 auto 20px;
+    text-align: center; }
+  section.schedule-section2 .schedule-box .schedule-tabs .nav-tabs {
+    border: none;
+    justify-content: center; }
+    section.schedule-section2 .schedule-box .schedule-tabs .nav-tabs a.nav-item {
+      display: inline-block;
+      border: none;
+      text-align: center;
+      background: #2ecc71;
+      color: #fff;
+      font-size: 18px;
+      font-family: "Rubik", sans-serif;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0;
+      padding: 12px 30px;
+      margin: 0 2px;
+      background: #5649c0;
+      border: 1px solid transparent;
+      border-bottom: none;
+      -webkit-border-top-left-radius: 3px;
+      -moz-border-top-left-radius: 3px;
+      -o-border-top-left-radius: 3px;
+      border-top-left-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+      -moz-border-top-right-radius: 3px;
+      -o-border-top-right-radius: 3px;
+      border-top-right-radius: 3px; }
+    section.schedule-section2 .schedule-box .schedule-tabs .nav-tabs a[aria-selected="true"] {
+      background: #fff;
+      color: #5649c0;
+      border: 1px solid #e4e2f4;
+      border-bottom: none;
+      margin-bottom: -1px; }
+  section.schedule-section2 .schedule-box .schedule-tabs .tab-content {
+    padding: 70px 100px;
+    border: 1px solid #e4e2f4;
+    background: #fff;
+    box-shadow: 0 25px 35px #efefef;
+    -webkit-box-shadow: 0 25px 35px #efefef;
+    -moz-box-shadow: 0 25px 35px #efefef;
+    -o-box-shadow: 0 25px 35px #efefef; }
+    section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post {
+      margin-bottom: 100px;
+      position: relative; }
+      section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post img {
+        width: 70px;
+        height: auto;
+        float: left;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        margin-top: 38px;
+        position: relative;
+        z-index: 2; }
+      section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post i {
+        width: 70px;
+        height: 70px;
+        display: block;
+        background: #5649c0;
+        text-align: center;
+        line-height: 70px;
+        font-size: 36px;
+        color: #fff;
+        float: left;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        position: relative;
+        z-index: 2; }
+      section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont {
+        margin-left: 100px; }
+        section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont span.time {
+          display: block;
+          color: #2ecc71;
+          font-size: 18px;
+          font-weight: 300;
+          font-family: "Rubik", sans-serif;
+          margin: 0 0 5px; }
+        section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont p.schedule-title {
+          color: #2d3034;
+          font-weight: 400; }
+        section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont p {
+          font-weight: 300;
+          margin-bottom: 5px;
+          line-height: 26px; }
+        section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont p.schedule-auth {
+          font-style: italic;
+          font-family: "Lora", serif; }
+          section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont p.schedule-auth span {
+            color: #5649c0; }
+    section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post:after {
+      content: '';
+      position: absolute;
+      top: 80px;
+      left: 35px;
+      width: 1px;
+      height: 260px;
+      background: #e4e2f4; }
+    section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post:before {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 25px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 1px solid #e4e2f4;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      z-index: 2; }
+    section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post.time-off-item:before {
+      bottom: -100px; }
+    section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post.time-off-item {
+      padding-top: 38px; }
+      section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post.time-off-item span.time {
+        margin-top: 5px; }
+      section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post.time-off-item span.time-off {
+        display: block;
+        color: #5649c0;
+        font-size: 18px;
+        font-family: "Rubik", sans-serif;
+        line-height: 22px; }
+    section.schedule-section2 .schedule-box .schedule-tabs .tab-content .row:last-child .schedule-post:after,
+    section.schedule-section2 .schedule-box .schedule-tabs .tab-content .row:last-child .schedule-post:before {
+      display: none; }
+    section.schedule-section2 .schedule-box .schedule-tabs .tab-content .center-area a {
+      box-shadow: 0 10px 15px #efefef;
+      -webkit-box-shadow: 0 10px 15px #efefef;
+      -moz-box-shadow: 0 10px 15px #efefef;
+      -o-box-shadow: 0 10px 15px #efefef; }
+
+section.schedule-section2.with-back-color {
+  background: #2a2a2a; }
+  section.schedule-section2.with-back-color .schedule-box {
+    background: url("../images/dev6.png") center top repeat-x;
+    margin-bottom: -165px;
+    margin-top: 2px;
+    z-index: 2;
+    position: relative; }
+    section.schedule-section2.with-back-color .schedule-box .schedule-tabs .tab-content {
+      box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+      -o-box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05); }
+
+section.schedule-section3 {
+  padding: 80px 0 10px; }
+  section.schedule-section3 .title-section {
+    border-bottom: 1px solid #e4e2f4;
+    padding-bottom: 40px; }
+  section.schedule-section3 .schedule-box .schedule-block {
+    margin-bottom: 75px; }
+    section.schedule-section3 .schedule-box .schedule-block h1 {
+      color: #5649c0; }
+    section.schedule-section3 .schedule-box .schedule-block h2 {
+      letter-spacing: -0.5px;
+      padding-bottom: 13px;
+      margin-bottom: 17px;
+      border-bottom: 1px solid #e4e2f4; }
+    section.schedule-section3 .schedule-box .schedule-block .schedule-image {
+      position: relative; }
+      section.schedule-section3 .schedule-box .schedule-block .schedule-image img {
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px; }
+      section.schedule-section3 .schedule-box .schedule-block .schedule-image .hover-box {
+        position: absolute;
+        bottom: 6px;
+        left: 6px; }
+        section.schedule-section3 .schedule-box .schedule-block .schedule-image .hover-box .white-box {
+          min-width: 270px;
+          background: rgba(255, 255, 255, 0.9);
+          text-align: center;
+          padding: 10px 5px;
+          margin-top: 6px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          border-radius: 3px; }
+          section.schedule-section3 .schedule-box .schedule-block .schedule-image .hover-box .white-box p {
+            font-family: "Lora", serif;
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 0; }
+    section.schedule-section3 .schedule-box .schedule-block .schedule-content ul.schedule-list {
+      padding-left: 25px; }
+      section.schedule-section3 .schedule-box .schedule-block .schedule-content ul.schedule-list li {
+        color: #5649c0;
+        font-size: 18px;
+        font-family: "Lora", serif;
+        font-style: italic;
+        line-height: 28px;
+        padding-left: 10px; }
+    section.schedule-section3 .schedule-box .schedule-block .schedule-speakers ul.speaker-list li {
+      display: block;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: center; }
+      section.schedule-section3 .schedule-box .schedule-block .schedule-speakers ul.speaker-list li img {
+        width: 40px;
+        height: 40px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-right: 20px; }
+      section.schedule-section3 .schedule-box .schedule-block .schedule-speakers ul.speaker-list li span {
+        color: #5649c0;
+        margin-bottom: 0;
+        letter-spacing: -0.5px;
+        line-height: 22px; }
+
+section.agenda-section {
+  padding: 100px 0;
+  background: #f9fafb; }
+  section.agenda-section .article-box {
+    margin-top: 25px; }
+  section.agenda-section .schedule-box {
+    padding: 0 30px; }
+    section.agenda-section .schedule-box ul.schedule-list li {
+      display: block;
+      padding: 25px 30px;
+      border-bottom: 1px solid #e4e2f4; }
+      section.agenda-section .schedule-box ul.schedule-list li span.time {
+        display: block;
+        color: #2ecc71;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: "Rubik", sans-serif;
+        margin: 0; }
+      section.agenda-section .schedule-box ul.schedule-list li img {
+        width: 70px;
+        height: auto;
+        float: left;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        border-radius: 6px; }
+      section.agenda-section .schedule-box ul.schedule-list li .schedule-cont {
+        margin-left: 100px; }
+        section.agenda-section .schedule-box ul.schedule-list li .schedule-cont p {
+          font-weight: 400;
+          margin-bottom: 0;
+          line-height: 26px; }
+        section.agenda-section .schedule-box ul.schedule-list li .schedule-cont p.schedule-auth {
+          font-style: italic;
+          font-family: "Lora", serif; }
+          section.agenda-section .schedule-box ul.schedule-list li .schedule-cont p.schedule-auth span {
+            color: #5649c0; }
+    section.agenda-section .schedule-box ul.schedule-list li:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none; }
+    section.agenda-section .schedule-box ul.schedule-list li.time-off-item {
+      background: #f7f8f9 !important;
+      border-bottom: none;
+      margin-top: -1px;
+      overflow: hidden;
+      padding-bottom: 25px; }
+      section.agenda-section .schedule-box ul.schedule-list li.time-off-item i {
+        width: 70px;
+        height: 70px;
+        display: block;
+        background: #2ecc71;
+        text-align: center;
+        line-height: 70px;
+        font-size: 36px;
+        color: #fff;
+        float: left;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        border-radius: 6px;
+        position: relative;
+        z-index: 2; }
+      section.agenda-section .schedule-box ul.schedule-list li.time-off-item span.time-off {
+        display: block;
+        color: #2f3032;
+        font-size: 18px;
+        font-family: "Rubik", sans-serif;
+        margin-left: 100px;
+        line-height: 28px; }
+      section.agenda-section .schedule-box ul.schedule-list li.time-off-item span.time {
+        margin-left: 100px;
+        margin-top: 7px; }
+
+.collapse-box .panel-title {
+  margin-bottom: 0; }
+
+.collapse-box .panel-default {
+  background: #fff !important;
+  border: none;
+  margin-bottom: 1px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1); }
+
+.collapse-box .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top: none;
+  padding: 60px 40px; }
+
+.collapse-box .panel {
+  background: transparent; }
+
+.collapse-box .panel-default > .panel-heading {
+  background: transparent;
+  border: none;
+  padding: 0; }
+  .collapse-box .panel-default > .panel-heading a {
+    display: block;
+    padding: 20px 40px;
+    position: relative;
+    color: #5649c0;
+    background: #fff;
+    font-size: 24px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400 !important;
+    line-height: 24px;
+    border-bottom: 1px solid #5649c0; }
+  .collapse-box .panel-default > .panel-heading a:before {
+    content: '-';
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 24px;
+    height: 24px;
+    color: #5649c0;
+    font-size: 17px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #5649c0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out; }
+  .collapse-box .panel-default > .panel-heading a.collapsed {
+    background: #5649c0;
+    color: #fff; }
+  .collapse-box .panel-default > .panel-heading a.collapsed:before {
+    content: '+';
+    color: #fff;
+    border-color: #fff; }
+</style>
+
+<body >
+<section class="schedule-section" id="schedule-section">
+        <div class="container">
+            <div class="schedule-box">
+                <div class="title-section white-style">
+                    <h1> Title Forum schedule</h1>
+                    <p> </p>
+                              <input  name="text" type="text" id ="a1" class="a1" placeholder=" Title Schedule  " />
+                              <p   id = "e1"></p>
+                            <hr>
+                         
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="schedule-block">
+                            
+                            <h2>Saturday, 24</h2>
+                            <select  id="o1"> 
+                                    <option value="0">Day</option>
+                                    <option value="1">Sunday</option>
+                                    <option value="2">Monday</option>
+                                    <option value="3">Tuesday </option>
+                                    <option value="4">Wednesday</option>
+                                    <option value="5">Thursday</option>
+                                    <option value="6">Friday</option>
+                                    <option value="7">Saturday</option>
+                                      </select>
+                                   <input  name="text" type="date" id ="a2"  class="a2" />
+                                <p id="e2"></p><hr>
+
+
+                            <ul class="schedule-list">
+                                <li>
+                    <span class="time">time <input name="usr_time"  type="time" id ="a3"  class="a3"   /> </span>
+                    <p id="e3"></p>
+
+                  
+                   <input  name="text" type="text" id ="a5"  class="a5"   placeholder=" Icon Of This Event  " />
+                    <p id="e4"></p>
+                    
+
+            <div class="schedule-cont">
+                <p>title<input  name="text" type="text" id ="a4"  class="a4"   placeholder="  Title This  Event " />
+                <p  id="e5"></p>
+            </p>
+                <p class="schedule-auth"><span></span></p>
+            </div>
+            <img src="img/m1.jpg" alt="a"> 
+                                </li> 
+                                
+                                 <i class="ionicons ion-coffee"></i>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4">
+                        <div class="schedule-block">
+                            <h2>Sunday, 25</h2>
+                            <ul class="schedule-list">
+                                <li>
+                                    <span class="time">9:30-10:30</span>
+                                    <img src="upload/others/m1.jpg" alt="">
+                                    <div class="schedule-cont">
+                                        <p>Insperational Talks</p>
+                                        <p class="schedule-auth"><span></span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time">10:30-11:30</span>
+                                    <img src="upload/others/m1.jpg" alt="">
+                                    <div class="schedule-cont">
+                                        <p>How to network?</p>
+                                        <p class="schedule-auth"><span></span></p>
+                                    </div>
+                                </li>
+                                <li class="time-off-item">
+                                    <span class="time">11:30-12:00</span>
+                                    <i class="ionicons ion-coffee"></i>
+                                    <span class="time-off"> Break!</span>
+                                </li>
+                                <li>
+                                    <span class="time">12:00-13:00</span>
+                                    <img src="upload/others/m1.jpg" alt="">
+                                    <div class="schedule-cont">
+                                        <p>How to sell and network in the Market?</p>
+                                        <p class="schedule-auth"><span></span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time">13:00-14:00</span>
+                                    <img src="upload/others/m1.jpg" alt="">
+                                    <div class="schedule-cont">
+                                        <p>How to pitch?</p>
+                                        <p class="schedule-auth"><span></span></p>
+                                    </div>
+                                </li>
+                                    <li class="time-off-item">
+                                    <span class="time">14:00-15:00</span>
+                                    <i class="ionicons ion-coffee"></i>
+                                    <span class="time-off"> Lunch Break!</span>
+                                </li>
+                                <li>
+                                    <span class="time">15:00-18:00</span>
+                                    <img src="upload/others/m1.jpg" alt="">
+                                    <div class="schedule-cont">
+                                        <p>Let's work together</p>
+                                        <p class="schedule-auth"> <span></span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time">19:30-21:00</span>
+                                    <img src="upload/others/m1.jpg" alt="">
+                                    <div class="schedule-cont">
+                                        <p>Networking Activity</p>
+                                        <p class="schedule-auth"> <span></span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time">21:00</span>
+                                    <img src="upload/others/m1.jpg" alt="">
+                                    <div class="schedule-cont">
+                                        <p>End of the 2nd Round</p>
+                                        <p class="schedule-auth"> <span></span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                     -->
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
