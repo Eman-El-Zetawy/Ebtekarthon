@@ -8,70 +8,80 @@
     <title>Home</title>
     <link rel="stylesheet" href="./fonts.css">
     <style>
-
-      
-        .apphoto{
-            margin-bottom: 20px;
-            margin-top: 5px;
-            background-color:darkgrey;
-        }
-        .h3{
-            margin-top: 20px;
-        }
-        .bigdiv{
-            padding-top: 100px;
+        body{
             background: url("./dev4.png") center bottom repeat-y;
             font-size: 20px;
             color: #5649c0;
-
             
         }
+        .apphoto {
+            margin-bottom: 50px;
+            margin-top: 5px;
+            background-color: darkgrey;
+        }
 
-        input
+        .h3 {
+            margin-top: 20px;
+        }
+
+        .bigdiv {
+            padding-top: 100px;
+            width: 25%;
+            margin: auto;
+           
+
+
+        }
+
         
-        {
+        input{
             box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
             -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
             -moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
             -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-            border: none; 
+            border: none;
+            margin: 0 0 20px;
+            width: 100%;
         }
-        .img{
+
+        .img {
             border-radius: 50%;
+            width: 100%;
+            margin-bottom: 30px;
         }
-      
-        button{
-          cursor: pointer;
-          background-color:  #5649C0;;
-          font-size: 20px;
-           color: white;
-          width: 6.5%;
-          border: none; 
-          margin-top: 30px;
-          margin-bottom: 50px;
+
+        button {
+            cursor: pointer;
+            background-color: #5649C0;
+            ;
+            font-size: 20px;
+            color: white;
+            width: 100%;
+            border: none;
+            margin-bottom: 20px;
+
         }
-       
     </style>
 </head>
 
 <body>
-       
+
+
 
 
     
-    <center>
         <div class="bigdiv">
             <img src="profile.JPG" class="img" alt=" "><br>
-            <h3 class="h3"> To change image click choose file</h3><br>
-            <input id="apphoto" class="apphoto" type="file" name="profile_photo" placeholder="suhaib">
+
+
             <div>
-                To enter title :<br> <input type="text" placeholder="Enter title" class="text1"><br>
-                To enter date : <br><input type="text" placeholder="Enter date" class="text2"><br>
-                To enter location :<br> <input type="text" placeholder="Enter location" class="text3"><br>
+                <input type="text" placeholder="  Enter title" class="text1"><br>
+                <input type="text" placeholder="  Enter date" class="text2"><br>
+                <input type="text" placeholder="  Enter location" class="text3"><br>
             </div>
-           <button>  OK  </button>
+            <button> OK </button>
         </div>
-    </center> 
+    
 
 </body>
 
