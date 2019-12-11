@@ -2,6 +2,10 @@
 body{
   background: url("dev4.png") center bottom repeat-y; }
 
+  .h1{
+    color: #5649c0;
+}
+
 section.about-section {
     padding-top: 100px;
     }
