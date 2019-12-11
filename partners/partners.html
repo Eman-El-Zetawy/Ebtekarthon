@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <title>partners </title>
+         <title>Partners </title>
           <meta charset="UTF-8"> 
           <link  type="text/css" rel="stylesheet"  href = "partners.css" />
            <meta name ="viewport" content="width=device-width,initial-scale=1.0">
            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+           <link rel="stylesheet" href="./fonts.min.css">
         </head>
         <body>
-          <div class = "conter" >
-            <div >partners </div>
-                <div >
-                 <span >Title partners </span> <br>
-                   <input  name="text" type="text" id ="a1" class="a1" placeholder=" Title  partner  " />
-                   <p   id = "e1"></p>
-                 <hr>
-              </div>
-   <div  class="page">
-              <div >   create organizers
-                <span > photo </span> <br>
-                <input  name="text" type="text" id ="a2"  class="a2" placeholder="  photo for  this partner " />
-                <p id="e2"></p><hr>
-                 <span > website  </span><br>
-                  <input  name="text" type="text" id ="a3"  class="a3"   placeholder="  website for  this partner " />
-                  <p id="e2"></p><hr>
-            </div>
 
-              <div><button  id="b1">save</button>
-              <button id="b2"> add partner </button></div>
-         </div>     
-              <div  class = "page">
-              How to display the page user <br> 
+            <section class="section" id="section">
+                <div class="container">
+                    <div > 
+                                <h1 class ="h1"> Partners</h1>  <p> </p> 
 
-                <button id="b3" class="b3"> show partners organizers </button>
-                  <div  id="list">
-                <ul><li>  THINK  add </li></ul>
-                   
-                  </div>
-               <button  id="b4">add partner save </button>
-            </div> 
-          </div>
+                        <label> Title : </label>  <input  name="text" type="text" id ="a1"  placeholder=" Partners  " />
+                                            <p id = "e1"></p> <hr>
+                   </div>
+                   <br>
+                
+                                    <label>  Create organizers:</label> <br><br> 
+                      <div class="schedule-block">      
+                                  <label> Photo  :  </label> <input  name="text" type="text" id ="a2"     placeholder=" Enter  Photo  " />
+                                         <p id="e1"></p>   
+                                  <label>  Website  :</label>  <input  name="text" type="text" id ="a3"    placeholder=" Enter Website  " />
+                                           <p id="e3"></p>  <hr> 
+        
+                                <label >  <button>  Save  </button></label>
+                                <label >  <button>  Add  </button></label>
+                                                             <hr> 
+                      </div> 
+                                 <label>  Create Page  User :</label> <br><br>
+        
+                 <div class="schedule-block">   
+                                <div ><ul></ul></div>
+        
+                                                   <label >  <button>  Show   </button></label>
+                                                   <label >  <button>  Add  </button></label>
+                                                   <hr> 
+                                                    </div>    
+                            </div>
+                </section>
            <script src="partners.js"></script>
     </body>
 </html>

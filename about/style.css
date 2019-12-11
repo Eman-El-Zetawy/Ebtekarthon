@@ -1,8 +1,10 @@
 
+body{
+  background: url("dev4.png") center bottom repeat-y; }
 
 section.about-section {
     padding-top: 100px;
-    background: url("dev4.png") center bottom repeat-x; }
+    }
     section.about-section textarea {
       margin-bottom: 20px; }
 

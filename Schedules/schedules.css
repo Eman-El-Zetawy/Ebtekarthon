@@ -1,4 +1,3 @@
-
 body{
     background: url("./dev4.png") center bottom repeat-y;
   
@@ -6,7 +5,7 @@ body{
  .h1{
        color: #5649c0;
  }
-section.section {
+ section.schedule-section {
     padding-top: 50px;
     margin: auto;
    
