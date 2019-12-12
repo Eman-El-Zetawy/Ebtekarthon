@@ -1,0 +1,59 @@
+
+body{
+  background: url("dev4.png") center bottom repeat-y; }
+
+  .h1{
+    color: #5649c0;
+}
+
+section.about-section {
+    padding-top: 100px;
+    text-align: center;
+    }
+    section.about-section textarea {
+      margin-bottom: 20px; }
+
+
+        /* #Edit{
+            font-size: 20px;
+            color: #5649c0;
+            margin: 0 0 20px;
+            margin-left: 300px;
+            
+        } */
+
+        .Description{
+            box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+            -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+            -moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+            -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+            border: none; 
+            
+        }
+        label{
+            font-size: 20px;
+            color: #5649c0;
+           
+        }
+
+        button{
+          cursor: pointer;
+          background-color:  #5649c0;;
+          font-size: 20px;
+           color: white;
+          width: 6.5%;
+          border: none; 
+          width: 30%;
+
+        }
+
+        input{
+          box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+          -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+          -moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+          -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+          border: none; 
+          width: 30%;
+          
+        }
+        
