@@ -10,14 +10,13 @@ input{
     -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
     border: none;
     margin: 0 0 20px ;
+    width: 30%;
 }
 .img {
-    border-radius: 50%;
-    width: 22%;
+    border-radius: 5px;
+    width: 30%;
     margin-bottom: 30px;
-    position: absolute;
-    top: 190px;
-    right: 280px ;
+   margin: 0 auto;
     border: #5649c0  4px solid ;
 }
  .h1{
@@ -26,6 +25,7 @@ input{
 section.section {
     padding-top: 50px;
     margin: auto;
+    text-align: center;
 }
         label{
             font-size: 20px;
@@ -36,10 +36,8 @@ section.section {
           background-color:  #5649c0;
           font-size: 20px;
            color: white;
-          width: 200px;
+          width: 30%;
           border: none; 
         }
-        .schedule-block{
-            margin-left: 50px ;
-        }
+      
         
