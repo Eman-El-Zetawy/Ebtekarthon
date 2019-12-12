@@ -9,6 +9,7 @@ body{
 section.section {
     padding-top: 50px;
     margin: auto;
+    text-align: center;
    
 }
     
@@ -24,7 +25,7 @@ section.section {
           background-color:  #5649c0;;
           font-size: 20px;
            color: white;
-          width: 200px;
+          width: 30%;
           border: none; 
 
         }
@@ -34,7 +35,8 @@ section.section {
           -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
           -moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
           -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-          border: none; 
+          border: none;
+          width: 30%; 
        
           
         }
