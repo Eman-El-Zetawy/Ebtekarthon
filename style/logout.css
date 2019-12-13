@@ -1,0 +1,127 @@
+* {
+		margin: 0 auto;
+	}
+
+
+	body {
+		background: url("../dev4.png") center bottom repeat-y;
+		font-family: 'Ubuntu', sans-serif;
+
+	}
+
+	.column {
+		background-color: #b2f675;
+		border: 1px solid #e6e6e6;
+		width: 350px;
+		margin: 10px;
+		margin-top: 200px;
+		border-radius: 5px;
+	}
+
+	input {
+		box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+		-webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+		-moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+		-o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+		border: none;
+		margin-top: 20px;
+		width: 80%;
+		margin-bottom: 25px;
+
+	}
+.navbar-nav {
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav > li > a {
+	color: #fff !important;
+	font-size: 17px;
+	font-weight: 400 !important;
+	font-family: "Rubik", sans-serif;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	padding: 40px 22px !important;
+	border-bottom: 1px solid transparent;
+	position: relative;
+}
+
+.navbar-nav > li > a i {
+	font-size: 13px;
+	margin-left: 10px;
+}
+
+.navbar-nav > li.active > a:before {
+	content: '';
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #5649c0;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav > li:hover > a {
+	opacity: 0.7;
+}
+
+.navbar-nav > li.active:hover > a:before {
+	bottom: -2px;
+}
+
+.navbar-nav li.drop-link {
+	position: relative;
+}
+
+.navbar-collapse {
+	position: relative;
+}
+.containar{
+	width: 50%;
+	display: flex;
+	background-color: #434e5a;
+	opacity: .8;
+	border-radius: 10px;
+	margin-top: 150px;
+}
+#logo{
+	    vertical-align: middle;
+    border-style: none;
+	width: 30%;
+}
+.model-content{
+	width: 30%;
+	background-color: #434e5a;
+	opacity: .8;
+	border-radius: 10px;
+	margin-top: 150px;
+}
+ button{
+          cursor: pointer;
+          background-color:  #5649c0;
+          font-size: 20px;
+           color: white;
+          width: 10%;
+          border: none; 
+        }
+
+input.form-control {
+	box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+	-o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+	border: none;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 30%;
+
+}
+

@@ -1,75 +1,113 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <title>Contacts  </title>
-          <meta charset="UTF-8"> 
-          <link  type="text/css" rel="stylesheet"  href = "contacts.css" />
-           <meta name ="viewport" content="width=device-width,initial-scale=1.0">
-           <meta http-equiv="X-UA-Compatible" content="ie=edge">
-           <link rel="stylesheet" href="./fonts.min.css">
-        </head>
-        <body>
+	<title>Contacts </title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="../style/contacts.css" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../style/fonts.min.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+
+			<a class="navbar-brand">
+				<img src="../images/logo.png" alt=""></a>
+
+			<!--this is button to responsive for ul>list below-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span></button>
+
+			<!--Options-->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav m-auto">
+					<!--pages link is here-->
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../home/home.html">Home</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../about/about.html">About</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../schedules/schedules.html">Schedule</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../speaker/speaker.html">Speakers</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../juries/juries.html">Juries</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../partners/partners.html">Partners</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../contants/contacts.html">Contacts</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../logout/login.html">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="section" id="section">
+		<div class="container">
+			<div>
+				<h1 class="h1"> Contacts</h1>	<br>  <hr>
+				<label> Create Contants: </label>
+			
+				
+			</div>
+		
+			<div class="schedule-block">
+					<input  name="text" type="text"     id ="inputVenue"     placeholder=" Enter  Venue  " />
+					<p id="error1"></p> 
+
+			<input  name="text" type="tel"    id ="inputPhone"     placeholder=" Enter  Phone  " />
+					<p id="error2"></p> 
+
+			<input  name="text" type="email"   id ="inputEmail"    placeholder=" Enter Email  " />
+					<p id="error3"></p>  <hr> 
+
+				<hr>
+			</div><label>Create Person:</label><br><br>
+			<div class="schedule-block">
+			
+					<input name="text"  type="text"      id ="inputName"    placeholder="  Enter Name  " />
+					<p id="error4"></p> 
+   
+				   <input name="text"  type="text"     id ="inputPosition"    placeholder="  Enter  Position  " />
+					<p id="error5"></p> 
+   
+				 <input name="text"    type="text"      id ="inputMobile "    placeholder="  Enter  Mobile  " />
+				 <p id="error6"></p>
+   
+   
+				<input  name="text" type="email"   id ="inputEmail2"    placeholder=" Enter Email  " />
+				 <p id="error7"></p>  
+   
+				  <input  name="text" type="text"     id ="inputLogo"    placeholder=" Enter Logo  " />
+				 <p id="error8"></p> 
+
+				<hr>
+			</div>
+
+			  <label>Create Social Media:</label><br>
+			<div class="schedule-block">
+			
+					<input  name="text"   type="text"    id ="inputLogo2"    placeholder=" Enter Logo  " />
+					<p id="error9"></p> 
+	  
+				   <input  name="text" type="text" id ="inputUrl"    placeholder=" Enter Url  " />
+					<p id="error10"></p> 
+				<hr>
+
+				 <button> Save </button>
+				<hr>
+			</div>
+
+		</div>
+	</section>
 
 
-
-            <section class="section" id="section">
-                <div class="container">
-                    <div > 
-                                <h1 class ="h1"> Contacts</h1>  <p> </p> 
-                                         <hr>
-                   </div>
-                   <br>
-                
-                                    <label>  Create Contacts:</label> <br><br> 
-                      <div class="schedule-block">    
-                                 <input  name="text" type="text" id ="a2"     placeholder=" Enter  Venu  " />
-                                         <p id="e2"></p> 
-                                  <input  name="text" type="tel" id ="a3"     placeholder=" Enter  Phone  " />
-                                         <p id="e3"></p>   
-                                   <input  name="text" type="email" id ="a4"    placeholder=" Enter email  " />
-                                           <p id="e4"></p>  <hr> 
-</div> 
-                                           <label>  Create Person :</label> <br><br> 
-                   <div class="schedule-block">        
-                                 <input name="text"  type="text" id ="a5"    placeholder="  Enter Name  " />
-                                           <p id="e5"></p>
-                          <input name="text"  type="text" id ="a6"    placeholder="  Enter  Position  " />
-                                           <p id="e6"></p>
-              <input name="text"  type="text" id ="a7"    placeholder="  Enter  Mobile  " />
-              <p id="e7"></p>
-             <input  name="text" type="email" id ="a8"    placeholder=" Enter Email  " />
-              <p id="e8"></p>  
-               <input  name="text" type="text" id ="a9"    placeholder=" Enter Logo  " />
-              <p id="e9"></p> 
-              <hr>       
-       </div>      
-
-              <label>  Create Social Media:</label> <br><br>
-
- <div class="schedule-block"> 
-                <input  name="text" type="text" id ="a10"    placeholder=" Enter Logo  " />
-              <p id="e10"></p> 
-             <input  name="text" type="text" id ="a11"    placeholder=" Enter Url  " />
-              <p id="e11"></p> 
-              <hr>
-
-                                 <button>  Save  </button>
-                                
-                                                             <hr> 
- </div>
-  <!--                               <label>  Create Page  User :</label> <br><br>
-         
-                 <div class="schedule-block">   
-                                <div ><ul></ul></div>
-        
-                                                  <button>  Show   </button>
-                                                
-                                                   <hr> 
-                                                    </div>     -->
-                            </div>
-                </section>
-
-
-           <script src="contacts.js"></script>
-    </body>
-</html>
+	<script src="../js/contacts.js"></script>
+</body></html>

@@ -2,24 +2,62 @@
 <html lang="en" class="no-js">
 <head>
         <title>Schedule</title>
-        <link  type="text/css" rel="stylesheet"  href = "schedules.css" />
-        <link rel="stylesheet" href="./fonts.min.css">
+        	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+        <link  type="text/css" rel="stylesheet"  href = "../style/schedules.css" />
+        <link rel="stylesheet" href="../style/fonts.min.css">
        
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body >
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
 
+			<a class="navbar-brand">
+				<img src="../images/logo.png" alt=""></a>
+				
+			<!--this is button to responsive for ul>list below-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span></button>
+				
+			<!--Options-->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav m-auto">
+					<!--pages link is here-->
+					<!-- <li class="nav-item drop-link">
+						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li> -->
+						<li class="nav-item drop-link">
+						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../home/home.html">Home</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../about/about.html">About</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../schedules/schedules.html">Schedule</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../speaker/speaker.html">Speakers</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../juries/juries.html">Juries</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../partners/partners.html">Partners</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../contacts/contacts.html">Contacts</a></li>
+						<li class="nav-item drop-link">
+						<a class="nav-link" href="../logout/login.html">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
     <section class="schedule-section" id="schedule-section">
         <div class="container">
             <div class="title-section white-style"> 
                         <h1 class ="h1"> Forum schedule</h1>  <p> </p> 
-                <label> Title : </label>  <input  name="text" type="text" id ="a1"  placeholder=" Forum Schedule  " />
-                                    <p id = "e1"></p> <hr>
+               
+                                    <hr>
            </div>
             <div >
-              <label> Day : </label> <select  id="o1" > 
+            <select  id="o1" > 
                                         <option value="0">Day</option>
                                         <option value="1">Sunday</option>
                                         <option value="2">Monday</option>
@@ -30,27 +68,27 @@
                                         <option value="7">Saturday</option>
                                           </select>
 
-              <label>  Month : </label>  <input  name="text" type="date" id ="a2"  />
+              <input  name="text" type="date" id ="a2"  />
                                     <p id="e2"></p><hr>
                 </div><br>
         
                             <label>  Create Event :</label> <br><br> 
               <div class="schedule-block">      
-                          <label>  Time :</label> <input name="usr_time"  type="time" id ="a3"     />
+                          <input name="usr_time"  type="time" id ="a3"     />
                                   <p id="e3"></p>
-                          <label> Title :  </label> <input  name="text" type="text" id ="a4"     placeholder=" Enter  Title  " />
+                         <input  name="text" type="text" id ="a4"     placeholder=" Enter  Title  " />
                                    <p  id="e4"></p>
-                          <label>  Image  :</label>  <input  name="text" type="text" id ="a5"    placeholder=" Enter Image  " />
+                           <input  name="text" type="text" id ="a5"    placeholder=" Enter Image  " />
                                    <p id="e5"></p>  <hr> 
 
-                        <label >  <button>  Save  </button></label>
-                        <label >  <button>  Add  </button></label>
+                        <button>  Save  </button>
+                   
                                                      <hr> 
               </div> 
                          <label>  Create Page  User :</label> <br><br>
 
          <div class="schedule-block">   
-                                <label>Day : </label>  <select  id="o2" > 
+                                <select  id="o2" > 
                                     <option value="0">Day</option>
                                     <option value="1">Sunday</option>
                                     <option value="2">Monday</option>
@@ -61,14 +99,15 @@
                                     <option value="7">Saturday</option>
                                       </select> 
 
-                    <label> Month : </label>  <input  name="text" type="date" id ="a6"  />
+                     <input  name="text" type="date" id ="a6"  />
                                 <p id="e6"></p>  <hr> 
 
-                                           <label >  <button>  Show   </button></label>
-                                           <label >  <button>  Add  </button></label>
+                                            <button>  Show   </button>
+                                           
                                            <hr> 
                                             </div>    
                     </div>
         </section>
+        <script src="../js/schedule.js"></script>
     </body>
     </html>

@@ -1,0 +1,106 @@
+
+body{
+    background: url("./dev4.png") center bottom repeat-y;
+  
+}
+#navbarSupportedContent {
+	flex-grow: 0;
+	font-size: 25px;
+}
+
+.navbar-nav {
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav > li > a {
+	color: #fff !important;
+	font-size: 17px;
+	font-weight: 400 !important;
+	font-family: "Rubik", sans-serif;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	padding: 40px 22px !important;
+	border-bottom: 1px solid transparent;
+	position: relative;
+}
+
+.navbar-nav > li > a i {
+	font-size: 13px;
+	margin-left: 10px;
+}
+
+.navbar-nav > li.active > a:before {
+	content: '';
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #5649c0;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav > li:hover > a {
+	opacity: 0.7;
+}
+
+.navbar-nav > li.active:hover > a:before {
+	bottom: -2px;
+}
+
+.navbar-nav li.drop-link {
+	position: relative;
+}
+
+.navbar-collapse {
+	position: relative;
+}
+ .h1{
+       color: #5649c0;
+ }
+section.section {
+    padding-top: 50px;
+	margin: auto;
+	text-align: center;
+   
+}
+    
+    
+        label{
+            font-size: 20px;
+            color: #5649c0;
+           
+        }
+
+        button{
+          cursor: pointer;
+          background-color:  #5649c0;;
+          font-size: 20px;
+           color: white;
+          width: 30%;
+          border: none; 
+
+        }
+
+        input{
+          box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+          -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+          -moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+          -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+		  border: none; 
+		  width: 30%;
+       
+          
+        }
+        .schedule-block{
+            margin-left: 50px ;
+        }
+        

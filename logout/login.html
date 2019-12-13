@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../style/about.css">
-	<link rel="stylesheet" href="../style/fonts.min.css">
-	<title> About</title>
+	<link rel="stylesheet" href="../style/logout.css">
 </head>
 
 <body>
@@ -16,7 +15,7 @@
 		<div class="container-fluid">
 
 			<a class="navbar-brand">
-				<img src="../images/logo.png" alt=""></a>
+				<img src="../images/logo.png" onclick="header()" alt=""></a>
 
 			<!--this is button to responsive for ul>list below-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +25,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav m-auto">
 					<!--pages link is here-->
-					<li class="nav-item drop-link">
+						<li class="nav-item drop-link">
 						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li>
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../home/home.html">Home</a></li>
@@ -49,28 +48,56 @@
 		</div>
 	</nav>
 
-	<section class="about-section" id="About-section">
-		<div class="container">
-			<h1 class="h1"> About</h1>
-			<p> </p> <hr>
-			<div class="about-box">
-				<div class="title-section">
-					<input type="text" class="Description" placeholder="  Enter Title">
+	
+		<div class="model-dialog text-center">
+			<div class="col-sm-9 main-section">
+				<div class="model-content">
+					
+					<div class="col-12 user-img"></div>
+					<img src="logo.png" id="logo" alt="logo">
 				</div>
-				<br><textarea class="Description" id="" cols="45" rows="10" placeholder="  Enter Description"></textarea>
-
-				<div class="video-box">
-					<input type="text" placeholder="  Enter vidoe">
-					<br><br>
-
-
+				
+				<div class="col-12 form-input">
+					<form>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Enter Email">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Enter Email">
+						</div>
+						
+					</form>
+					<button type="submit" onclick="header()">Login</button>
 				</div>
-				<div>
-					<button> OK </button></div>
+			</div>
+			<div class="col-12 forget">
+				<a href="#">Forget Password?</a>
 			</div>
 		</div>
-	</section>
-<script src="../js/about.js"></script>
+	<script src="../js/login.js"></script>
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

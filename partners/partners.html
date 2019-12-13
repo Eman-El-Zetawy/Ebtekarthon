@@ -3,45 +3,85 @@
     <head>
          <title>Partners </title>
           <meta charset="UTF-8"> 
-          <link  type="text/css" rel="stylesheet"  href = "partners.css" />
+          	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+          <link  type="text/css" rel="stylesheet"  href = "../style/partners.css" />
            <meta name ="viewport" content="width=device-width,initial-scale=1.0">
            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-           <link rel="stylesheet" href="./fonts.min.css">
+           <link rel="stylesheet" href="../style/fonts.min.css">
         </head>
         <body>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+
+			<a class="navbar-brand">
+				<img src="../images/logo.png" alt=""></a>
+				
+			<!--this is button to responsive for ul>list below-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span></button>
+				
+			<!--Options-->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav m-auto">
+					<!--pages link is here-->
+						<li class="nav-item drop-link">
+						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li>
+						<li class="nav-item drop-link">
+						<a class="nav-link" href="../home/home.html">Home</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../about/about.html">About</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../schedules/schedules.html">Schedule</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../speaker/speaker.html">Speakers</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../juries/juries.html">Juries</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../partners/partners.html">Partners</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../contacts/contacts.html">Contacts</a></li>
+						<li class="nav-item drop-link">
+						<a class="nav-link" href="../logout/login.html">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
             <section class="section" id="section">
                 <div class="container">
                     <div > 
                                 <h1 class ="h1"> Partners</h1>  <p> </p> 
 
-                        <label> Title : </label>  <input  name="text" type="text" id ="a1"  placeholder=" Partners  " />
-                                            <p id = "e1"></p> <hr>
+                       
+                                 <hr>
                    </div>
                    <br>
                 
                                     <label>  Create organizers:</label> <br><br> 
                       <div class="schedule-block">      
-                                  <label> Photo  :  </label> <input  name="text" type="text" id ="a2"     placeholder=" Enter  Photo  " />
+                                   <input  name="text" type="text" id ="a2"     placeholder=" Enter  Photo  " />
                                          <p id="e1"></p>   
-                                  <label>  Website  :</label>  <input  name="text" type="text" id ="a3"    placeholder=" Enter Website  " />
+                                   <input  name="text" type="text" id ="a3"    placeholder=" Enter Website  " />
                                            <p id="e3"></p>  <hr> 
         
-                                <label >  <button>  Save  </button></label>
-                                <label >  <button>  Add  </button></label>
+                              
+                                             <button>  Save  </button>
+                                    
+                                
                                                              <hr> 
                       </div> 
                                  <label>  Create Page  User :</label> <br><br>
         
                  <div class="schedule-block">   
-                                <div ><ul></ul></div>
-        
-                                                   <label >  <button>  Show   </button></label>
-                                                   <label >  <button>  Add  </button></label>
+                           
+                     <button>  Show   </button>
+                     
+                                              
+                     
                                                    <hr> 
                                                     </div>    
                             </div>
                 </section>
-           <script src="partners.js"></script>
+           <script src="../js/partners.js"></script>
     </body>
 </html>

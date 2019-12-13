@@ -4,66 +4,104 @@
 <head>
         <meta charset="UTF-8"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
+  	
     <meta name ="viewport" content="width=device-width,initial-scale=1.0">
            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-           <link rel="stylesheet" href="./fonts.min.css">
-             <link  type="text/css" rel="stylesheet"  href = "speaker.css" />
+           	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+           <link rel="stylesheet" href="../style/fonts.min.css">
+             <link  type="text/css" rel="stylesheet"  href = "../style/speaker.css" />
     <title>Speackers</title>
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
 
+			<a class="navbar-brand">
+				<img src="../images/logo.png" alt=""></a>
+				
+			<!--this is button to responsive for ul>list below-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span></button>
+				
+			<!--Options-->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav m-auto">
+					<!--pages link is here-->
+					<!-- <li class="nav-item drop-link">
+						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li> -->
+						<li class="nav-item drop-link">
+						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li>
+				<li class="nav-item drop-link">
+						<a class="nav-link" href="../home/home.html">Home</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../about/about.html">About</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../schedules/schedules.html">Schedule</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../speaker/speaker.html">Speakers</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../juries/juries.html">Juries</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../partners/partners.html">Partners</a></li>
+					<li class="nav-item drop-link">
+						<a class="nav-link" href="../contacts/contacts.html">Contacts</a></li>
+						<li class="nav-item drop-link">
+						<a class="nav-link" href="../logout/login.html">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
       
                 <section class="speaking-section" id="speaking-section">
                     <div class="container">
                     <div > 
                                 <h1 class ="h1"> Speackers</h1>  <p> </p> 
 
-                        <label> Title : </label>  <input  name="text" type="text" id ="a1"  placeholder=" Speakers  " />
-                                            <p id = "e1"></p> <hr>
+                        
+                                             <hr>
                    </div>
                    <br>
                 
                                     <label>  Create page speaker :</label> <br><br> 
                       <div class="schedule-block">      
-                                  <label> Photo  :  </label> <input  name="text" type="text" id ="a2"     placeholder=" Enter  Photo  " />
+                                   <input  name="text" type="text" id ="a2"     placeholder=" Enter  Photo  " />
                
                 
-                <div class="form-group">
-                <div class="input-group">
-                <span class="input-group-btn">
-                <span class="btn btn-default btn-file"> 
-                    <img id='img-upload'  src="images.jpg"/> 
-                <input type="file" id="imgInp">
-                </span>
-                </span>
-                <input type="text" class="form-control" readonly>
-                </div>
-                </div>
+        <!-- <div class="form-group">
+        <div class="input-group">
+        <span class="input-group-btn">
+        <span class="btn btn-default btn-file"> 
+            <img id='img-upload'  src="../images/images.jpg"   class="img" /> 
+        <input type="file" id="imgInp">
+        </span>
+        </span>
+        <input type="text" class="form-control" readonly>
+        </div>
+        </div> -->
                         <p id="e1"></p>   
-                                  <label>  Name  :</label>  <input  name="text" type="text" id ="a3"    placeholder=" Enter Name  " />
+                                  <input  name="text" type="text" id ="a3"    placeholder=" Enter Name  " />
                                            <p id="e3"></p> 
-                                  <label>  Position  :</label>  <input  name="text" type="text" id ="a3"    placeholder=" Enter Position " />
+                                   <input  name="text" type="text" id ="a3"    placeholder=" Enter Position " />
                                            <p id="e3"></p> 
-                          <label>  Email  :</label>  <input  name="text" type="text" id ="a3"    placeholder=" Enter Email  " />
+                          <input  name="text" type="text" id ="a3"    placeholder=" Enter Email  " />
                                            <p id="e3"></p> 
                                            
                                            <hr> 
 
    
                         
-                                <label >  <button>  Save  </button></label>
-                                <label >  <button>  Add  </button></label>
+                               <button>  Save  </button>
+                             
                                                              <hr> 
                       </div> 
                                  <label>  Create Page  User :</label> <br><br>
         
                  <div class="schedule-block">   
-                                <div ><ul></ul></div>
+                               
         
-                                                   <label >  <button type="button" >  Show   </button></label>
-                                                   <label >  <button type="button" >  Add  </button></label>
+                                                  <button type="button" >  Show   </button>
+                                               
                                                    <hr> 
                                                     </div>    
                             </div>
@@ -71,7 +109,7 @@
       
 
 
-    <script src="speaker.js"></script>
+    <script src="../js/speaker.js"></script>
     
 </body>
 
