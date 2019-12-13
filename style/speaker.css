@@ -69,7 +69,7 @@ body{
 section.speaking-section {
   padding-top: 50px;
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
  
 }
 .img {
@@ -104,7 +104,44 @@ section.speaking-section {
 		width: 30%;
      
         
-      }
+	  }
+	  .btn-file {
+		border-color: #defbc4;
+		color: #defbc4;
+		box-shadow: 5px 5px 2px #defbc4;
+		border: 2px solid #9ec3ff;
+		cursor: pointer;
+		background-color: #5649c0;
+		color: white;
+		border: none;
+		width: 10%;
+	}
+	
+	/*#defbc4*/
+	
+	
+	.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	outline: none;
+	background: white;
+	cursor: inherit;
+	display: block;
+	}
+	
+	#img-upload{
+		width: 15%;
+		top: 250px;
+		position: absolute;
+		border-radius: 100%;
+		background: black;
+	
+	
+	}
       .schedule-block{
           margin-left: 50px ;
       }

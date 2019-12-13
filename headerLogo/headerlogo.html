@@ -4,7 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.slim.js"
+	integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+	crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../style/headerlogo.css">
 </head>
 
@@ -45,11 +50,12 @@
 			</div>
 		</div>
 	</nav>
-	<div class="main">
-				<div class="col-md-6">
+	<div class="model-dialog text-center">
+		<div class="col-sm-12 main-section">
+
+				<form>
 					<div class="form-group">
 				
-						<div class="input-group">
 							<span class="input-group-btn">
 								<span class="btn btn-default btn-file">
 									Browse Logo.. <input type="file" id="imgInp">
@@ -57,12 +63,46 @@
 							</span>
 					
 						</div>
-						<img id="img-upload">
-					</div>
-				</div>
-				</div>
+					
+				
   </div>
-		
-	<script src="../js/headerlogo.js"></script>
+  <script> 
+	$(document).ready( function() {
+    $(document).on('change', '.btn-file :file', function() {
+    var input = $(this),
+        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    input.trigger('fileselect', [label]);
+    });
+    $('.btn-file :file').on('fileselect', function(event, label) {
+        
+        var input = $(this).parents('.input-group').find(':text'),
+            log = label;
+        
+        if( input.length ) {
+            input.val(log);
+        } else {
+            if( log ) alert(log);
+        }
+    
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#img-upload').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#imgInp").change(function(){
+        readURL(this);
+    }); 	
+});
+	</script>
+
+	
+	
 </body></html>
 

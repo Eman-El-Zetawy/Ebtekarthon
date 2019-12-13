@@ -51,23 +51,24 @@
 
 	<section class="about-section" id="About-section">
 		<div class="container">
-			<h1 class="h1"> About</h1>
+			<h1 class="h1"> About Ebtekarthon</h1>
 			<p> </p> <hr>
 			<div class="about-box">
 				<div class="title-section">
-					<input type="text" class="Description" placeholder="  Enter Title">
+					<input type="text" class="Description" placeholder="  Enter Title"  id="inputTitle">
+					<p id="error1" ></p>
 				</div>
-				<br><textarea class="Description" id="" cols="45" rows="10" placeholder="  Enter Description"></textarea>
-
+				<br><textarea class="Description" id="" cols="45" rows="10" placeholder="  Enter Description"   id="textarea"></textarea>
+                   <p id="error2" ></p>
 				<div class="video-box">
-					<input type="text" placeholder="  Enter vidoe">
-					<br><br>
-
-
+					<input type="text" placeholder="  Enter vidoe"    id="inputVidoe">
+					<p id="error3"></p>
+			
 				</div>
 				<div>
-					<button> OK </button></div>
-			</div>
+					<hr>
+					<button  id="save"> Save</button></div>
+<hr><br>			</div>
 		</div>
 	</section>
 <script src="../js/about.js"></script>
