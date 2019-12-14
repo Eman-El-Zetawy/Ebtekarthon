@@ -1,8 +1,7 @@
-
-body{
-    background: url("./dev4.png") center bottom repeat-y;
-  
+body {
+	background: url("./dev4.png") center bottom repeat-y;
 }
+
 #navbarSupportedContent {
 	flex-grow: 0;
 	font-size: 25px;
@@ -73,15 +72,16 @@ body{
 	background-color: #5649c0;
 	color: white;
 	border: none;
-	width: 10%
+	width: 10%;
 }
+
 /*#defbc4*/
 
 
 .btn-file input[type=file] {
 position: absolute;
 top: 0;
-right: 0 ; 
+right: 0;
 font-size: 100px;
 text-align: right;
 filter: alpha(opacity=0);
@@ -90,15 +90,14 @@ outline: none;
 background: white;
 cursor: inherit;
 display: block;
-
 }
 
 #img-upload{
-
-	width: 20%;
+	margin-top: 20px;
+    width: 20%;
 	border-radius: 13px;
 	background: black;
-	margin-top: 20px;
-    
 	
 }
+
+

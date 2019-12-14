@@ -84,14 +84,16 @@
 .navbar-collapse {
 	position: relative;
 }
-/* .containar{
+/*
+.containar{
 	width: 50%;
 	display: flex;
 	background-color: #434e5a;
 	opacity: .8;
 	border-radius: 10px;
 	margin-top: 150px;
-} */
+}
+*/
 #logo{
 	    vertical-align: middle;
     border-style: none;
