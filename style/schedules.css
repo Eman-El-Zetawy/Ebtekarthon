@@ -1,7 +1,8 @@
-body{
-    background: url("./dev4.png") center bottom repeat-y;
-  
+body {
+	background: url("./dev4.png") center bottom repeat-y;
+
 }
+
 #navbarSupportedContent {
 	flex-grow: 0;
 	font-size: 25px;
@@ -62,44 +63,43 @@ body{
 .navbar-collapse {
 	position: relative;
 }
- .h1{
-       color: #5649c0;
- }
- section.schedule-section {
-    padding-top: 50px;
+
+section.schedule-section {
+	padding-top: 50px;
 	margin: auto;
 	text-align: center;
-   
 }
-    
-    
-        label{
-            font-size: 20px;
-            color: #5649c0;
-           
-        }
 
-        button{
-          cursor: pointer;
-          background-color:  #5649c0;;
-          font-size: 20px;
-           color: white;
-          width: 30%;
-          border: none; 
+.table-responsive-lg {
+	margin: 0 auto;
+	box-shadow: 2px 2px 20px black;
+	margin-top: 150px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+}
 
-        }
+#create {
+	margin-top: 70px;
+}
 
-        input{
-          box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-          -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-          -moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-          -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-		  border: none; 
-		  width: 30%;
-       
-          
-        }
-        .schedule-block{
-            margin-left: 50px ;
-        }
-        
+#add {
+	width: 65px;
+	height: 40px;
+	background-image: url(../images/add.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	content: '';
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	display: inline-block;
+	position: relative;
+	border: none;
+	margin-left: 3px;
+	outline: none;
+	background-color: #5649c0;
+	box-shadow: 2px 2px 20px #5649c0;
+
+}
+
