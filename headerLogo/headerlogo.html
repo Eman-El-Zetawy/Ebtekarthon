@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
-	<script
-	src="https://code.jquery.com/jquery-3.4.1.slim.js"
-	integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
-	crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../style/headerlogo.css">
+		<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.js"
+  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -50,29 +50,31 @@
 			</div>
 		</div>
 	</nav>
-	<div class="model-dialog text-center">
-		<div class="col-sm-12 main-section">
 
-				<form>
-					<div class="form-group">
-				
+			<div class="model-dialog text-center">
+			<div class="col-sm-12 main-section">
+	
+					<form>
+						<div class="form-group">
 							<span class="input-group-btn">
 								<span class="btn btn-default btn-file">
 									Browse Logo.. <input type="file" id="imgInp">
 								</span>
 							</span>
-					
 						</div>
-					
-				
-  </div>
-  <script> 
+					</form>
+					</div>
+						<img class="col-sm-20" id="img-upload" src="../images/logo.png">
+					</div>
+		
+	<script> 
 	$(document).ready( function() {
     $(document).on('change', '.btn-file :file', function() {
     var input = $(this),
         label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
     input.trigger('fileselect', [label]);
     });
+
     $('.btn-file :file').on('fileselect', function(event, label) {
         
         var input = $(this).parents('.input-group').find(':text'),
@@ -96,13 +98,13 @@
             reader.readAsDataURL(input.files[0]);
         }
     }
+
     $("#imgInp").change(function(){
         readURL(this);
     }); 	
 });
 	</script>
 
-	
-	
+
 </body></html>
 
