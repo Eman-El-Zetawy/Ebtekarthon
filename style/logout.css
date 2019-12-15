@@ -1,34 +1,14 @@
-* {
-		margin: 0 auto;
-	}
+body {
+	background: url("../images/dev4.png") center bottom repeat-y;
+	font-family: 'Ubuntu', sans-serif;
 
+}
 
-	body {
-		background: url("../dev4.png") center bottom repeat-y;
-		font-family: 'Ubuntu', sans-serif;
+#navbarSupportedContent {
+	flex-grow: 0;
+	font-size: 25px;
+}
 
-	}
-
-	.column {
-		background-color: #b2f675;
-		border: 1px solid #e6e6e6;
-		width: 350px;
-		margin: 10px;
-		margin-top: 200px;
-		border-radius: 5px;
-	}
-
-	input {
-		box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-		-webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-		-moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-		-o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
-		border: none;
-		margin-top: 20px;
-		width: 80%;
-		margin-bottom: 25px;
-
-	}
 .navbar-nav {
 	transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -84,6 +64,7 @@
 .navbar-collapse {
 	position: relative;
 }
+
 /*
 .containar{
 	width: 50%;
@@ -94,26 +75,36 @@
 	margin-top: 150px;
 }
 */
-#logo{
-	    vertical-align: middle;
-    border-style: none;
+#logo {
+	vertical-align: middle;
+	border-style: none;
 	width: 30%;
 }
-.model-content{
+
+.model-content {
 	width: 30%;
 	background-color: #434e5a;
 	opacity: .8;
 	border-radius: 10px;
 	margin-top: 150px;
+	margin: 0 auto;
 }
- button{
-          cursor: pointer;
-          background-color:  #5649c0;
-          font-size: 20px;
-           color: white;
-          width: 10%;
-          border: none; 
-        }
+
+.main-section {
+	padding-top: 180px;
+	margin: auto;
+	text-align: center;
+	width: auto;
+}
+
+button {
+	cursor: pointer;
+	background-color: #5649c0;
+	font-size: 20px;
+	color: white;
+	width: 10%;
+	border: none;
+}
 
 input.form-control {
 	box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
@@ -126,4 +117,3 @@ input.form-control {
 	width: 30%;
 
 }
-

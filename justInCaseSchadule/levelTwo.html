@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
 <head>
 	<title>Schedule</title>
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="../style/levelTwoSchedules.css" />
 	<link rel="stylesheet" href="../style/fonts.min.css">
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-
 			<a class="navbar-brand">
 				<img src="../images/logo.png" alt=""></a>
-
-			<!--this is button to responsive for ul>list below-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span></button>
 
 			<!--Options-->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav m-auto">
-					<!--pages link is here-->
-					<!-- <li class="nav-item drop-link">
-						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li> -->
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li>
 					<li class="nav-item drop-link">
@@ -52,14 +48,78 @@
 	</nav>
 	<section class="schedule-section" id="schedule-section">
 		<div class="container">
-				<div class="col-lg-5 table-responsive-lg">
-  <table class=" table">
-   <tr>
-   	<td rowspan="1"><h3 id="create">Create Schedule...<input type="button" id="add"></h3></td>
-   </tr>
-  </table>
-</div>
+			<div class="col-lg-5 table-responsive-lg">
+				<table class=" table">
+					<tr>
+						<td>
+							<h2>fourm Schedule</h2>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="form-group justify-content-center row">
+								<div class="col-">
+									<input class="form-control" type="datetime-local" value="2019-12-15T01:05:00" id="datetime">
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h5>Create Event</h5>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="form-group justify-content-center row">
+								<div class="col-5">
+									<input class="form-control" type="text" placeholder="Title" id="title">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="form-group justify-content-center row">
+							<span class="input-group-btn">
+								<span class="btn btn-default btn-file">
+									Browse Image.. <input type="file" id="imgInp">
+								</span>
+							</span>
+						</div>
+						<img class="col-sm-20" id="img-upload" src="../images/logo.png">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button id="save"> Save</button>
+						</td>
+					</tr>
+						<tr>
+						<td>
+							<h2>Create User Page</h2>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="form-group justify-content-center row">
+								<div class="col-8">
+									<input class="form-control" type="datetime-local" value="2019-12-15T01:05:00" id="datetime">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button id="save"> Save</button>
+						</td>
+					</tr>
+				</table>
+
 			</div>
+		</div>
+
 	</section>
 	<script src="../js/levelTwoSchedule.js"></script>
 </body></html>

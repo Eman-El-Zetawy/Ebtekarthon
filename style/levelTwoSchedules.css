@@ -1,6 +1,5 @@
 body {
 	background: url("./dev4.png") center bottom repeat-y;
-
 }
 
 #navbarSupportedContent {
@@ -68,38 +67,78 @@ section.schedule-section {
 	padding-top: 50px;
 	margin: auto;
 	text-align: center;
+	width: auto;
 }
 
 .table-responsive-lg {
 	margin: 0 auto;
 	box-shadow: 2px 2px 20px black;
-	margin-top: 150px;
-	width: 200px;
-	height: 200px;
+	margin-top: 10px;
+	width: auto;
+	height: auto;
 	border: 1px solid black;
 }
-
+/*
 #create {
 	margin-top: 70px;
 }
+*/
 
-#add {
-	width: 65px;
-	height: 40px;
-	background-image: url(../images/add.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	content: '';
-	width: 40px;
-	height: 40px;
-	border-radius: 10px;
-	display: inline-block;
-	position: relative;
-	border: none;
-	margin-left: 3px;
-	outline: none;
+
+#title{
+	text-align: center;
+}
+ button{
+          cursor: pointer;
+          background-color:  #5649c0;
+          font-size: 20px;
+           color: white;
+          width: 6.5%;
+          border: none; 
+          width: 30%;
+
+        }
+
+.btn-file {
+	border-color: #defbc4;
+	color: #defbc4;
+	box-shadow: 5px 5px 2px #defbc4;
+	border: 2px solid #9ec3ff;
+	cursor: pointer;
 	background-color: #5649c0;
-	box-shadow: 2px 2px 20px #5649c0;
+	color: white;
+	border: none;
+	height: 40px;
+}
+.input-group-btn>.btn {
+    position: relative;
+    display: flex;
+	width: 100%;
+}
+/*#defbc4*/
 
+
+.btn-file input[type=file] {
+text-align: center;
+filter: alpha(opacity=0);
+opacity: 0;
+outline: none;
+background: white;
+cursor: inherit;
+overflow: auto;
+    display: flex;
+    position: absolute;
+}
+
+#img-upload{
+	margin-top: 20px;
+    width: 50%;
+	border-radius: 13px;
+	background: black;
+	
+}
+
+h2, h5{
+	color:  #5649c0;
 }
 
