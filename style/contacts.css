@@ -83,7 +83,7 @@ label {
 
 }
 
-.save {
+button {
 	cursor: pointer;
 	background-color: #5649c0;
 	font-size: 20px;
@@ -105,16 +105,4 @@ input {
 
 .schedule-block {
 	margin-left: 50px;
-}
-
-.table1 {
-	width: 60%;
-	font-size: 20px;
-     float: left;
-}
-
-.table1 {
-	width: 40%;
-	font-size: 20px;
-     float: right;
 }

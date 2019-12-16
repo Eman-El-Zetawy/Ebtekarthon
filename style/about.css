@@ -71,7 +71,7 @@ section.about-section {
     text-align: center;
     }
     section.about-section textarea {
-      margin: 10px   0; }
+      margin-bottom: 20px; }
 
 
         /* #Edit{
@@ -94,10 +94,6 @@ section.about-section {
             font-size: 20px;
             color: #5649c0;
            
-        }
-        p{
-            font-size: 20px;
-            color: #5649c0;
         }
 
         button{
