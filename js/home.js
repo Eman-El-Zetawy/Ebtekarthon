@@ -21,12 +21,12 @@ fetch('http://localhost:6600/home',{
     headers : my })  .then( res => res.json())  .then((data) => {a=data; console.log(a) ; draw(a) ;});
 
     function draw (a){
- 
         title.value = a[0].title ;
         location.value = a[0].location ;
         date.value = a[0].date ;
 
     }
+    
     buttonSave.addEventListener("click" , ()=>{
         alert("You sure "); 
     if(validator.isEmpty(title.value)){

@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../style/fonts.min.css">
 </head>
-
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -49,65 +48,18 @@
 		</div>
 	</nav>
 
-	<section class="section" id="section">
-		<div class="container">
-			<div>
-				<h1 class="h1"> Contacts </h1>	<br>  <hr>
-				<label> Create Contants: </label>
-			
-				
-			</div>
-		
-			<div class="schedule-block">
-					<input  name="text" type="text"     id ="inputVenue"     placeholder=" Enter  Venue  " />
-					<p id="error1"></p> 
-
-			<input  name="text" type="tel"    id ="inputPhone"     placeholder=" Enter  Phone  " />
-					<p id="error2"></p> 
-
-			<input  name="text" type="email"   id ="inputEmail"    placeholder=" Enter Email  " />
-					<p id="error3"></p>  <hr> 
-
-			</div><label>Create Person:</label><br><br>
-			<div class="schedule-block">
-			
-					<input name="text"  type="text"      id ="inputName"    placeholder="  Enter Name  " />
-					<p id="error4"></p> 
-   
-				   <input name="text"  type="text"     id ="inputPosition"    placeholder="  Enter  Position  " />
-					<p id="error5"></p> 
-   
-				 <input name="text"    type="text"      id ="inputMobile"    placeholder="  Enter  Mobile  " />
-				 <p id="error6"></p>
-   
-   
-				<input  name="text" type="email"   id ="inputEmail2"    placeholder=" Enter Email  " />
-				 <p id="error7"></p>  
-   
-				  <input  name="text" type="text"     id ="inputLogo"    placeholder=" Enter Logo  " />
-				 <p id="error8"></p> 
-
-				<hr>
-			</div>
-
-			  <label>Create Social Media:</label><br>
-			<div class="schedule-block">
-			
-					<input  name="text"   type="text"    id ="inputLogo2"    placeholder=" Enter Logo  " />
-					<p id="error9"></p> 
-	  
-				   <input  name="text" type="text" id ="inputUrl"    placeholder=" Enter Url  " />
-					<p id="error10"></p> 
-				<hr>
-
-				 <button class="save"  id="save"> Save </button>
-				<hr>
-			</div>
-
-		</div>
-	</section>
-
-
-	<script src="../js/contacts.js"></script>
-	<script type="text/javascript" src ="../validator/node_modules/validator/validator.min.js" ></script>
-</body></html>
+    <li class="nav-item drop-link">
+    <a class="nav-link" href="../contacts/contacts.html"><img src="../images/addpink.png"  alt=" " style="width: 5%;float: right;"></a></li>
+    <label>Create person:</label><br>
+    <div   class= "table1" >
+        <table  id ="d">
+        </table>
+    </div>
+    <label>Create Social Media:</label><br>
+    <div   class= "table2" >
+            <table  id ="s">
+            </table>
+        </div>
+<script src="../js/caseContact.js"></script>
+</body>
+</html>

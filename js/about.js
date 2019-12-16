@@ -11,7 +11,6 @@ const save = document.getElementById("save");
 const my =new Headers();
 my.append('Content-Type', 'application/json');
 
-var data ={};
 var a =[];
 
 fetch('http://localhost:6600/about',{
@@ -28,20 +27,34 @@ fetch('http://localhost:6600/about',{
 save.addEventListener("click" , ()=>{
 
     if(validator.isEmpty(title.value)){
+      
         e1.innerHTML = "The Title is empty";
+          a=false ;
     }
-    alert("You sure "); 
+    else { a= true ;
+    e1.innerHTML="";
+}
 
     if(validator.isEmpty(text.value)){
         e2.innerHTML = "The Description is empty";
+        b=false ;
+    }
+    else{
+        b=true ;
+        e2.innerHTML ="";
     }
     
 
     if(validator.isEmpty(vidoe.value)){
         e3.innerHTML = "The Vidoe is empty";
+        c=false ;
+    }
+    else{
+        c=true ; 
+        e3.innerHTML ="";
     }
 
-
+if(a&&b&&c){
     fetch('http://localhost:6600/about' ,{
         method:'PUT',
         headers : my , 
@@ -56,8 +69,5 @@ save.addEventListener("click" , ()=>{
       console.log("done put") ;
      
     });
-
-
-
-
+ }
 });
