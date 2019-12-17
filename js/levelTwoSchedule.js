@@ -1,35 +1,21 @@
-$(document).ready( function() {
-    $(document).on('change', '.btn-file :file', function() {
-    var input = $(this),
-        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-    input.trigger('fileselect', [label]);
-    });
+function levelTwo() {
+	location.replace("../schedules/schedules.html");
+	}
 
-    $('.btn-file :file').on('fileselect', function(event, label) {
-        
-        var input = $(this).parents('.input-group').find(':text'),
-            log = label;
-        
-        if( input.length ) {
-            input.val(log);
-        } else {
-            if( log ) alert(log);
-        }
-    
-    });
-    function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            
-            reader.onload = function (e) {
-                $('#img-upload').attr('src', e.target.result);
-            }
-            
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
+function saveDay() {
+		location.replace("../schedules/schedules.html");
+	}
+// hamza trash>>here after we set up the data base,& method post, the main page of schedule we get the result from here.
+function day() {
+	var str="";
+	var createday = document.getElementById('dateDay').value;
+   var show = document.getElementById('show');
+	var newl= document.createElement('li');
+	createday==''
+	? alert('input is empty'):
+	createday!==''
+	 str= createday;
+	 newl.textContent= str;
+	 show.appendChild(newl);
+}
 
-    $("#imgInp").change(function(){
-        readURL(this);
-    }); 	
-});

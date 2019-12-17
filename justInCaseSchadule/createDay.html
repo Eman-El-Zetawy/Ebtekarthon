@@ -52,74 +52,41 @@
 				<table class=" table">
 					<tr>
 						<td>
-							<h2>fourm Schedule</h2>
+							<h2>Schedule</h2>
 						</td>
 					</tr>
-					<tr>
+						<tr>
 						<td>
-							<div class="form-group justify-content-center row">
-								<div class="col-">
-									<input class="form-control" type="datetime-local" value="2019-12-15T01:05:00" id="datetime">
-								</div>
-							</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td>
-							<h5>Create Event</h5>
+							<h5>Create Day</h5>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<div class="form-group justify-content-center row">
 								<div class="col-5">
-									<input class="form-control" type="text" placeholder="Title" id="title">
+									<input class="form-control" type="tsxt" placeholder="Monday 12/16" id="dateDay">
 								</div>
 							</div>
 						</td>
+						<td>
+								<h6 id="show">
+							</h6>
+						</td>
 					</tr>
+
+				
+					
 					<tr>
 						<td>
-							<div class="form-group justify-content-center row">
-							<span class="input-group-btn">
-								<span class="btn btn-default btn-file">
-									Browse Image.. <input type="file" id="imgInp">
-								</span>
-							</span>
-						</div>
-						<img class="col-sm-20" id="img-upload" src="../images/logo.png">
+							<button id="save" onclick="day()"> Save</button>
 						</td>
-					</tr>
-					<tr>
-						<td>
-							<button id="save"> Save</button>
-						</td>
-					</tr>
-						<tr>
-						<td>
-							<h2>Create User Page</h2>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="form-group justify-content-center row">
-								<div class="col-8">
-									<input class="form-control" type="datetime-local" value="2019-12-15T01:05:00" id="datetime">
-								</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<button id="save"> Save</button>
-						</td>
-					</tr>
+				
 				</table>
 
 			</div>
 		</div>
 
 	</section>
+
 	<script src="../js/levelTwoSchedule.js"></script>
 </body></html>

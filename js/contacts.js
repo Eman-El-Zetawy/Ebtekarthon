@@ -23,7 +23,4 @@ const logo =  document.getElementById("inputLogo") ;
 const logo2 =  document.getElementById("inputLogo2") ;
 const url =  document.getElementById("inputUrl") ;
 
-const my =new Headers();
-my.append('Content-Type', 'application/json');
-
-
+save
