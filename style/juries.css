@@ -102,4 +102,10 @@ section.section {
       .schedule-block{
           margin-left: 50px ;
       }
-      
+      #img-upload{
+		  background-color: black;
+		   width: 25%;
+		   height: 25%;
+		   border-radius: 50%;
+		   margin: auto;
+	  }
