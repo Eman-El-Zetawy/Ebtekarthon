@@ -52,14 +52,49 @@
 	</nav>
 	<section class="schedule-section" id="schedule-section">
 		<div class="container">
-				<div class="col-lg-5 table-responsive-lg">
-  <table class=" table">
-   <tr>
-   	<td rowspan="1"><h3 id="create">Create Schedule...<input type="button" onclick="levelTwo()" id="add"></h3></td>
-   </tr>
-  </table>
-</div>
+			<div class="col-7 table-responsive-lg">
+				<table class=" table">
+					<tr>
+						<td colspan="4">
+							<h3 id="create">Create Schedule...<input type="button" onclick="levelTwo()" id="add"></h3>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="col day" id="day">
+								<input type="button" onclick="removeDay(this)" id="deleteDay">
+								<input type="button" onclick="addEvent()" id="edit"><br>
+								<h6 id="show">day</h6>
+								
+
+
+							</div>
+						</td>
+						<td>
+							<div class="col day" id="day">
+								<input type="button" onclick="removeDay(this)" id="deleteDay">
+								<input type="button" onclick="addEvent()" id="edit"><br>
+								<h6 id="show">day</h6>
+
+
+							</div>
+						</td>
+						<td>
+							<div class="col day" id="day">
+								<input type="button" onclick="removeDay(this)" id="deleteDay">
+								<input type="button" onclick="addEvent()" id="edit"><br>
+								<h6 id="show">day</h6>
+
+
+							</div>
+						</td>
+					</tr>
+
+
+				</table>
 			</div>
+		</div>
 	</section>
 	<script src="../js/schedule.js"></script>
+	
 </body></html>
