@@ -74,13 +74,17 @@ section.schedule-section {
 	margin: 0 auto;
 	box-shadow: 2px 2px 20px black;
 	margin-top: 150px;
-	width: 200px;
-	height: 200px;
+	width: auto;
+	height: auto;
 	border: 1px solid black;
 }
 
 #create {
 	margin-top: 70px;
+}
+
+h3 {
+	width: auto;
 }
 
 #add {
@@ -103,3 +107,50 @@ section.schedule-section {
 
 }
 
+.day {
+	box-shadow: 2px 2px 20px black;
+	margin-top: 20px;
+	height: auto;
+	width: 150px;
+	position: relative;
+	border: 1px solid black;
+
+}
+
+#deleteDay {
+
+	float: right;
+	display: flex;
+	width: auto;
+	height: 19px;
+	left: 15px;
+	outline: none;
+	border: none;
+	background-image: url(../images/remove.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+#title {
+	display: flex;
+	position: relative;
+	margin-left: 5px;
+}
+
+#edit {
+
+	width: 15px;
+	height: 19px;
+	left: auto;
+	float: right;
+	margin-right: 7px;
+	border: none;
+	outline: none;
+	border: none;
+	background-image: url(../images/edit.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+
+}
