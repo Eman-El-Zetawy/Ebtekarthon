@@ -64,11 +64,37 @@ body {
 	position: relative;
 }
 
-section.schedule-section {
+.row {
 	padding-top: 50px;
 	margin: auto;
-	text-align: center;
+		height: auto;
 }
+.schedule-box{
+  margin-left:  70px;
+  margin-right: 70px;
+	width:300px;
+   	height: auto;
+}
+.schedule-post{
+  border: 1px solid black;
+  border-radius:10px ;
+  margin: 10px;
+	width:300px;
+	margin-left: 50px;
+		height: auto;
+	box-shadow: 2px 2px 20px black;
+  
+}
+.schedule-content{
+  background-color: rgb(255, 255, 255);
+  padding-left: 5px;
+  border-radius: 10px;
+  width:auto;
+		height: auto;
+  
+}
+
+/*
 
 .table-responsive-lg {
 	margin: 0 auto;
@@ -78,35 +104,45 @@ section.schedule-section {
 	height: auto;
 	border: 1px solid black;
 }
+*/
 
 #create {
-	margin-top: 70px;
+	margin-left: 10px;
+	margin-top: 10px;
 }
 
-h3 {
+h6 {
 	width: auto;
+	text-align: center;
+	
 }
 
 #add {
-	width: 65px;
-	height: 40px;
+
 	background-image: url(../images/add.svg);
 	background-repeat: no-repeat;
 	background-position: center;
-	content: '';
 	width: 40px;
 	height: 40px;
 	border-radius: 10px;
 	display: inline-block;
 	position: relative;
 	border: none;
-	margin-left: 3px;
 	outline: none;
 	background-color: #5649c0;
 	box-shadow: 2px 2px 20px #5649c0;
+	float: right;
+	margin-right: .5px;
 
 }
+*, :after, :before {
+  box-sizing: border-box;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 
+/*
 .day {
 	box-shadow: 2px 2px 20px black;
 	margin-top: 20px;
@@ -116,6 +152,7 @@ h3 {
 	border: 1px solid black;
 
 }
+*/
 
 #deleteDay {
 
@@ -129,13 +166,6 @@ h3 {
 	background-image: url(../images/remove.svg);
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-
-#title {
-	display: flex;
-	position: relative;
-	margin-left: 5px;
 }
 
 #edit {
