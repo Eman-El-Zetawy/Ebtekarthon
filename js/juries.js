@@ -33,3 +33,6 @@ $(document).ready( function() {
         readURL(this);
     }); 	
 });
+function create() {
+    location.replace("../juries/Juries2.html")
+}
