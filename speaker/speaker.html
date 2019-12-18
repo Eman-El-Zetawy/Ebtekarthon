@@ -2,37 +2,37 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8"> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  	
-    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
-           <meta http-equiv="X-UA-Compatible" content="ie=edge">
-           	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
-           <link rel="stylesheet" href="../style/fonts.min.css">
-             <link  type="text/css" rel="stylesheet"  href = "../style/speaker.css" />
-    <title>Speackers</title>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../style/fonts.min.css">
+	<link rel="stylesheet" href="css.css">
+	<link type="text/css" rel="stylesheet" href="../style/speaker.css" />
+	<title>Speackers</title>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 
 			<a class="navbar-brand">
 				<img src="../images/logo.png" alt=""></a>
-				
+
 			<!--this is button to responsive for ul>list below-->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span></button>
-				
+
 			<!--Options-->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav m-auto">
 					<!--pages link is here-->
-					<!-- <li class="nav-item drop-link">
-						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li> -->
-						<li class="nav-item drop-link">
+					<li class="nav-item drop-link">
 						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li>
-				<li class="nav-item drop-link">
+					<li class="nav-item drop-link">
 						<a class="nav-link" href="../home/home.html">Home</a></li>
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../about/about.html">About</a></li>
@@ -46,48 +46,32 @@
 						<a class="nav-link" href="../partners/partners.html">Partners</a></li>
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../contacts/contacts.html">Contacts</a></li>
-						<li class="nav-item drop-link">
+					<li class="nav-item drop-link">
 						<a class="nav-link" href="../logout/login.html">Log Out</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-      
-                <section class="speaking-section" id="speaking-section">
-                    <div class="container">
-                    <div > 
-                                <h1 class ="h1"> Speackers</h1>  <p> </p> 
 
-                        
-                                             <hr>
-                   </div>
-                  
-
-
-                   <div   class= "table1" >
-                        <table  id ="s">
-                            <tr>
-                                <td><button class="buttonPerson">1</button></td>
-                                <td><button class="buttonPerson">2</button></td>
-                                
-                                <td>
-                                    <a href= "../justInCaseSpeaker/speakerpage1.html" >
-                            <button  class="buttonPerson" ><label>Add Speaker</label></button></a>
-                        </td></tr>
-                    
-                    </table>
-                    </div>
-
- </div>
-                    </section>
-
-                       
-                
-                    
-                    
-
-    <script src="../js/speaker.js"></script>
-    
+	<section class="speaking-section" id="speaking-section">
+			<h1 class ="h1"> Our Speakers : </h1>  <p> </p>   <hr>
+		<div class="card">
+			<img src="download.jpg" alt="Avatar">
+			<div class="container">
+				<h4><b>John Doe</b></h4>
+				<p>Architect & Engineer </p><br>
+				<a href="../speaker/speaker.html"><button class="button"  >DELETE</button></a> 
+			</div>
+		</div>
+		<div class="maincard">
+			<img src="download.jpg" alt="Avatar" >
+			<div class="container">
+				<h4><b>Click here to add  speaker</b></h4>
+				<p> </p>
+				<a href="../speaker/html.html"><br><button class="button" ><strong>ADD</strong></button> </a>
+			</div>
+		</div>
+	</section>
+	<script src="../js/speaker.js"></script>
 </body>
-
-</html>               
+</html>

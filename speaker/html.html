@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../style/headerlogo.css">
+	<link rel="stylesheet" href="../style/fonts.min.css">
 	<link rel="stylesheet" href="css.css">
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.js"
-		integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+	<link type="text/css" rel="stylesheet" href="../style/speaker.css" />
+	<title>Speackers</title>
 </head>
 
 <body>
@@ -31,6 +30,8 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav m-auto">
 					<!--pages link is here-->
+					<!-- <li class="nav-item drop-link">
+						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li> -->
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li>
 					<li class="nav-item drop-link">
@@ -54,22 +55,25 @@
 		</div>
 	</nav>
 
-	<div class="model-dialog text-center">
+	<section class="speaking-section" id="speaking-section">
+		<div class="form">
 
-		<div class="col-sm-12 main-section">
-			<h1 class="h1"> Select new Header Logo : </h1>
-			<p> </p>
-			<hr>
-			<form>
-				<div class="form-group">
-					<input id="fileInput" type="file" />
-					<img class="col-sm-20" id="imgInp" src="../images/logo.png">
-				</div>
-			</form>
+			<input id="fileInput" type="file" />
+			<img class="imgform" src="download.jpg" id="imgInp" alt="Avatar">
+			<input class="form-control" type="text" name="name" id="name" placeholder="Enter Speaker Name">
+			<p></p>
+			<input class="form-control" type="text" name="position" id="position" placeholder="Enter Speaker Position">
+			<p></p>
+			<input class="form-control" type="text" name="email" id="email" placeholder="Enter Speaker Email">
+			<p></p>
+			<textarea class="form-control" name="brif" id="brif" cols="30" rows="10" placeholder="Enter Speaker Brif"></textarea>
+			<p></p>
+		<a href="../speaker/speaker.html"><button class="button" id="save">SAVE</button></a> 
 		</div>
-
-	</div>
+	</section>
 	<script src="../js/speaker.js"></script>
+</body>
+</html>
 </body>
 
 </html>
