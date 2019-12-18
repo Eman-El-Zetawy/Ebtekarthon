@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../style/fonts.min.css">
 </head>
-
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -49,51 +48,34 @@
 		</div>
 	</nav>
 	<section class="section" id="section">
-			<div class="container">  
-					<h1 class="h1"> Contacts </h1><hr>
-	<div   class= "table1" >
-
-			<table  id ="d">
-				<tr><td><button class="buttonPerson">1</button></td>
-				 <td><button class="buttonPerson">2</button></td>
-					<td><a href="../justInCaseContact/contactpage1.html">
-				<button  class="buttonPerson"><label>Add Contact</label>  </button></a>
-	</td></tr>
-			</table>
-		</div>
-
-	<div   class= "table1" >
-
-			<table  id ="d">
-				<tr>
-				<td><button class="buttonPerson">1</button></td>
-				 <td><button class="buttonPerson">2</button></td>
-				<td><a href="../justInCaseContact/contactpage2.html">
-					<button  class="buttonPerson">
-			<label>Add Person</label></button></a>
-	</td>
-</tr>
-	
-			</table>
-		</div>
-
-
-		<div   class= "table1" >
-				<table  id ="s">
-					<tr>
-						<td><button class="buttonPerson">1</button></td>
-						<td><button class="buttonPerson">2</button></td>
-						
-						<td>
-							<a href= "../justInCaseContact/contactpage3.html" >
-					<button  class="buttonPerson" ><label>Add Social Media</label></button></a>
-				</td></tr>
+		<div class="container">
+			<div>
+				<h1 class="h1"> Contacts </h1>	<br>  <hr>
+				<label> Create Contants: </label>
 			
-			</table>
+				
 			</div>
+		
+			<div class="schedule-block">
+					<input  name="text" type="text"     id ="inputVenue"     placeholder=" Enter  Venue  " />
+					<p id="error1"></p> 
+
+			<input  name="text" type="tel"    id ="inputPhone"     placeholder=" Enter  Phone  " />
+					<p id="error2"></p> 
+
+			<input  name="text" type="email"   id ="inputEmail"    placeholder=" Enter Email  " />
+					<p id="error3"></p> 
+					 <hr> 
+                    <button class="save"  id="save"> Save </button>
+                   <hr>
+            </div>
+            
+            <div class ="back"><a href ="../contacts/contacts.html"><button ><label>Back</label></button></a> </div>
+
 		</div>
 	</section>
 
-	<script src="../js/contacts.js"></script>
-	
-</body></html>
+<script src="../js/caseContact.js"></script>
+<script type="text/javascript" src ="../validator/node_modules/validator/validator.min.js" ></script>
+</body>
+</html>

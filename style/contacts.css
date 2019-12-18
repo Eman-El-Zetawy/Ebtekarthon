@@ -108,13 +108,21 @@ input {
 }
 
 .table1 {
-	width: 60%;
+	width: 100%;
 	font-size: 20px;
-     float: left;
+	margin: 30px;
+	margin-left:250px;
+  
 }
 
-.table1 {
-	width: 40%;
-	font-size: 20px;
-     float: right;
-}
+.buttonPerson{
+	width: 150px;
+	height: 150px;
+	margin: 0 30px ;
+	background: none;
+
+
+ }
+/*.back{
+	text-align: left;
+} */
