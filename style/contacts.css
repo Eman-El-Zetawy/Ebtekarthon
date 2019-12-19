@@ -60,15 +60,17 @@
 	width: 28%;
 	padding-bottom: 20px;
 }
-button {
+.button {
     cursor: pointer;
     background-color: #5649c0;
     font-size: 20px;
-    color: white;
+	color: white;
+	border-radius: 10px;
     width: 6.5%;
     border: none;
     width: 100%;
-    margin: 5%;
+	 margin: 0%  ; 
+	
 }
 textarea{
     margin: 5%;
@@ -165,6 +167,7 @@ label {
 	color: white;
 	width: 30%;
 	border: none;
+	border-radius: 5px;
 
 }
 
