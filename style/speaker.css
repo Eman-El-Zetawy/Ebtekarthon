@@ -90,7 +90,7 @@ section.speaking-section {
         background-color:  #5649c0;;
         font-size: 20px;
          color: white;
-        width: 30%;
+        width: 100%;
         border: none; 
 
       }
@@ -145,14 +145,6 @@ section.speaking-section {
       .schedule-block{
           margin-left: 50px ;
 	  }
-	  
-	  .table1 {
-		width: 100%;
-		font-size: 20px;
-		margin: 30px;
-		margin-left:250px;
-	  
-	}
 	
 	.buttonPerson{
 		width: 150px;
