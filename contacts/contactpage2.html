@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+    <head>
 	<title>Contacts </title>
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="../style/contacts.css" />
@@ -9,9 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../style/fonts.min.css">
-
 </head>
-
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -21,8 +18,7 @@
 				<img src="../images/logo.png" alt=""></a>
 
 			<!--this is button to responsive for ul>list below-->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span></button>
 
 			<!--Options-->
@@ -52,32 +48,47 @@
 		</div>
 	</nav>
 	<section class="section" id="section">
-		<div class="card">
-			<img class="contact-img" src="download.jpg" alt="Avatar">
-			<div class="container">
-				<h4><b>Our Contacts</b></h4>
-				<p>Num Phon</p>
-				<a href="../justInCaseContact/contactpage1.html"><button
-						class="button"><strong>ADD</strong></button></a>
+		<div class="container">
+		 <div>
+				<h1 class="h1"> Contacts </h1>	  <hr>
+				<!-- <label>Create Person:</label><br><br> -->
 				
-			</div><br>
-		</div>
+			</div>
+		
+			
+             
+			<div class="schedule-block">
+				<div class="form">
+				<input id="fileInput" type="file" />
+				<img class="imgform" src="download.jpg" id="imgInp" alt="Avatar">
+				</div>
+					<input name="text"  type="text"      id ="inputName"    placeholder="  Name  " />
+					<p id="error4"></p> 
+   
+				   <input name="text"  type="text"     id ="inputPosition"    placeholder="  Position  " />
+					<p id="error5"></p> 
+   
+				 <input name="text"    type="text"      id ="inputMobile"    placeholder="   Mobile  " />
+				 <p id="error6"></p>
+   
+   
+				<input  name="text" type="email"   id ="inputEmail2"    placeholder="  Email  " />
+				 <p id="error7"></p>  
+   
+				  <!-- <input  name="text" type="text"     id ="inputLogo"    placeholder=" Enter Logo  " />
+				 <p id="error8"></p>  -->
 
-		<div class="maincard">
-			<img src="../images/cont3.jpg" alt="Avatar">
-			<div class="container">
-				<h4><b>Click here to add Contact</b></h4>
-				<p> </p><br>
-				<a href="contactpage2.html"><button class="button"><strong>ADD</strong></button>
-				</a>
-				<br>
-			</div> <br>
-		</div>
+                <hr>
 
+                <a href ="../contacts/contacts.html"><button class="save"  id="save"> Save </button>
+               </a><hr>
+			</div>
+
+		
 	</section>
 
-	<script src="../js/contacts.js"></script>
-
+    
+<script src="../js/caseContact.js"></script>
+<script type="text/javascript" src ="../validator/node_modules/validator/validator.min.js" ></script>
 </body>
-
 </html>
