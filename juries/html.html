@@ -30,6 +30,8 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav m-auto">
 					<!--pages link is here-->
+					<!-- <li class="nav-item drop-link">
+						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li> -->
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../headerLogo/headerlogo.html">Header logo</a></li>
 					<li class="nav-item drop-link">
@@ -54,24 +56,24 @@
 	</nav>
 
 	<section class="speaking-section" id="speaking-section">
-			<h1 class ="h1"> Our Juries : </h1>  <p> </p>   <hr>
-		<div class="card">
-			<img src="download.jpg" alt="Avatar">
-			<div class="container">
-				<h4><b>John Doe</b></h4>
-				<p>Architect & Engineer </p><br>
-				<a href="#"><button class="button"  >DELETE</button></a> 
-			</div>
-		</div>
-		<div class="maincard">
-			<img src="download.jpg" alt="Avatar" >
-			<div class="container">
-				<h4><b>Click here to add  juries</b></h4>
-				<p> </p>
-				<a href="../juries/html.html"><br><button class="button" ><strong>ADD</strong></button> </a>
-			</div>
+		<div class="form">
+
+			<input id="fileInput" type="file" />
+			<img class="imgform" src="download.jpg" id="imgInp" alt="Avatar">
+			<input class="form-control" type="text" name="name" id="name" placeholder="Juries Name">
+			<p></p>
+			<input class="form-control" type="text" name="position" id="position" placeholder="Juries Position">
+			<p></p>
+			<input class="form-control" type="text" name="email" id="email" placeholder="Juries Email">
+			<p></p>
+			<textarea class="form-control" name="brif" id="brif" cols="30" rows="10" placeholder="Juries BIO"></textarea>
+			<p></p>
+		<a href="../juries/juries.html"><button class="button" id="save">SAVE</button></a> 
 		</div>
 	</section>
 	<script src="../js/speaker.js"></script>
 </body>
+</html>
+</body>
+
 </html>
