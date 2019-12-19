@@ -4,7 +4,7 @@
 <head>
 	<title>Schedule</title>
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
-	<link type="text/css" rel="stylesheet" href="../style/levelTwoSchedules.css" />
+	<link type="text/css" rel="stylesheet" href="../style/createEvent.css">
 	<link rel="stylesheet" href="../style/fonts.min.css">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,47 +46,21 @@
 			</div>
 		</div>
 	</nav>
-	<section class="schedule-section" id="schedule-section">
-		<div class="container">
-			<div class="col-lg-5 table-responsive-lg">
-				<table class=" table">
-					<tr>
-						<td>
-							<h2>Schedule</h2>
-						</td>
-					</tr>
-						<tr>
-						<td>
-							<h5>Create Day</h5>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="form-group justify-content-center row">
-								<div class="col-5">
-									<input class="form-control" type="tsxt" placeholder="Monday 12/16" id="dateDay">
-								</div>
-							</div>
-						</td>
-						<td>
-								<h6 id="show">
-							</h6>
-						</td>
-					</tr>
+	<div class="create-box">
+		<div class="row">
+			<div class="schedule-post">
+				<h2>Schedule</h2>
+				<hr>
+				<h6>Create Day</h6>
 
-				
-					
-					<tr>
-						<td>
-							<button id="save" onclick="day()"> Save</button>
-						</td>
-				
-				</table>
-
+				<hr>
+				<input type="text" placeholder="12:45 PM" id="datetime">
+				<input type="text" placeholder="Title" id="title">
+				<button id="save" onclick="levelTwo()"></button>
 			</div>
 		</div>
+	</div>
 
-	</section>
 
 	<script src="../js/levelTwoSchedule.js"></script>
 </body></html>
