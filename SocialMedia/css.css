@@ -51,19 +51,19 @@
     margin: auto;
     width: 30%;
 }
-button {
+.button {
     cursor: pointer;
     background-color: #5649c0;
     font-size: 20px;
     color: white;
-    width: 6.5%;
     border: none;
     width: 100%;
-    margin: 5%;
+    
 }
 textarea{
     margin: 5%;
 }
 #save{
   width: 100%;
+  margin-left: 20px;
 }
