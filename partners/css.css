@@ -1,0 +1,34 @@
+img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+ 
+}
+.imgform{
+    border-radius: 50%;
+}
+#fileInput{
+    display: none;
+}
+.form{
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+button {
+    cursor: pointer;
+    background-color: #5649c0;
+    font-size: 20px;
+    color: white;
+    width: 6.5%;
+    border: none;
+    width: 100%;
+    /* margin: 5%; */
+}
+.partners-img{
+    float: left;
+    width: 20%;
+    height: auto;
+}
+.part-add{
+    border-radius: 50%;
+}

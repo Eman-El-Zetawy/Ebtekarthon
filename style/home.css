@@ -70,32 +70,42 @@ input{
     -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
     border: none;
     margin: 0 0 20px ;
-    width: 30%;
+    width: 100%;
 }
-.img {
+img {
     border-radius: 5px;
-    width: 30%;
+    width: 100%;
     margin-bottom: 30px;
    margin: 0 auto;
-    border: #5649c0  4px solid ;
+    
 }
  .h1{
-       color: #5649c0;
+	   color: #5649c0;
+	   text-align: center;
  }
 section.section {
     padding-top: 50px;
     margin: auto;
     text-align: center;
 }
-        label{
-            font-size: 20px;
-            color: #5649c0; 
-        }
+     
         button{
           cursor: pointer;
           background-color:  #5649c0;
           font-size: 20px;
            color: white;
-          width: 30%;
+          width: 100%;
           border: none; 
-        }
+		}
+		.imgform{
+			border-radius: 15px;
+			
+		}
+		#fileInput{
+			display: none;
+		}
+		.form{
+			display: block;
+			margin: auto;
+			width: 30%;
+		}
