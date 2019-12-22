@@ -175,6 +175,15 @@ h6 {
 	height: auto;
 
 }
+#break{
+	width: 20%;
+	height: auto;
+	position: absolute;
+	margin-left: 12px;
+	background-image: url(../images/add.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 h3 {
 	width: auto;
