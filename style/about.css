@@ -96,8 +96,8 @@ section.about-section {
            
         }
         p{
-            font-size: 20px;
-            color: #5649c0;
+            font-size: 15px;
+            color: red;
         }
 
         button{
@@ -108,6 +108,9 @@ section.about-section {
           width: 6.5%;
           border: none; 
           width: 30%;
+          height:35px;
+        
+        
 
         }
 
@@ -118,6 +121,7 @@ section.about-section {
           -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
           border: none; 
           width: 30%;
+          height: 35px;
           
         }
         
