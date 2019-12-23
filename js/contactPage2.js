@@ -1,7 +1,3 @@
-
-
-
-
 document.getElementById('imgInp').addEventListener('click', () => {
     document.getElementById('fileInput').click()
   })
@@ -15,11 +11,17 @@ document.getElementById('imgInp').addEventListener('click', () => {
             reader.readAsDataURL(input.files[0]);
         }
     }
-    document.getElementById("imgInp").change(function(){
-        readURL(this);
-    }); 
+    document.getElementById("imgInp").addEventListener("change" ,function(){
+                readURL(this);
+            });
+    // document.getElementById("imgInp").change(function(){
+    //     readURL(this);
+    // }); 
 
+const my =new Headers();
+my.append('Content-Type', 'application/json');
 
+var obj = { };
 const e4 =  document.getElementById('error4') ;
 const e5 =  document.getElementById('error5') ;
 const e6 =  document.getElementById('error6') ;
@@ -31,9 +33,26 @@ const position =  document.getElementById("inputPosition") ;
 const mobile =  document.getElementById("inputMobile") ;
 const email2 =  document.getElementById("inputEmail2") ; 
 
-const my =new Headers();
-my.append('Content-Type', 'application/json');
 
+const save2 = document.getElementById("savePage2");
+
+save2.addEventListener("click" , ()=>{
+    console.log("hi");
+    var n = name.value , 
+       p= position.value ,
+       m = mobile.value , 
+       em = email2.value ; 
+
+       obj = {
+           name : n , 
+           position : p  , 
+           mobile : m , 
+           email : em 
+       } ; 
+       console.log( obj ) ; 
+       save2.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage2"> Save </button></a>' ; 
+   
+});
 
 	
 
