@@ -27,16 +27,16 @@ var  v = venue.value  ,
    e= email.value , 
    p = phone.value  ; 
 
-   obj = {
+fetch('http://localhost:6500/contactPage1',{
+  method:'POST',
+  headers : my , 
+  body:JSON.stringify({
     venue : v , 
     phone : p  ,  
-    email : e
-} ; 
-
-fetch('http://localhost:6600/contactp',{
-    method:'GET', 
-    headers : my })  .then( res => res.json())  .then((data) => {a=data;  draw(a) ; });
-
+    email : e 
+   })
+}).then( response=>response.json()) .then((data) => { obj = data ; console.log(data); });
+   
    console.log( obj );
   // save1.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage1"> Save </button></a>' ; 
 //   window.location.assign("../contacts/contacts.html") ;

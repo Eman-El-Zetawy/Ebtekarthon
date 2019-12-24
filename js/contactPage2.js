@@ -51,8 +51,7 @@ function main( ){
        em = email2.value ; 
 
 
-
- fetch('http://localhost:6600/contactPage2',{
+ fetch('http://localhost:6500/contactPage2',{
   method:'POST',
   headers : my , 
   body:JSON.stringify({
@@ -61,7 +60,7 @@ function main( ){
            mobile : m , 
            email : em 
    })
-}).then( response=>response.json()) .then((data) => { obj.push(data) ; console.log(data); });
+}).then( response=>response.json()) .then((data) => { obj = data ; console.log(data); });
    
        console.log( obj ) ; 
       // save2.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage2"> Save </button></a>' ; 
