@@ -13,7 +13,15 @@ var obj = { };
 
 const save1 = document.getElementById("savePage1");
 
-save1.addEventListener("click" , ()=>{
+save1.addEventListener("keydown",function(e){
+  if(e.key==="Enter"){
+    main();
+  } });
+
+save1.addEventListener("click" , main());
+
+
+function main(){
 console.log("hi");
 var  v = venue.value  , 
    e= email.value , 
@@ -24,7 +32,13 @@ var  v = venue.value  ,
     phone : p  ,  
     email : e
 } ; 
-   console.log( obj ); 
-   save1.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage1"> Save </button></a>' ; 
-   
-});
+
+fetch('http://localhost:6600/contactp',{
+    method:'GET', 
+    headers : my })  .then( res => res.json())  .then((data) => {a=data;  draw(a) ; });
+
+   console.log( obj );
+  // save1.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage1"> Save </button></a>' ; 
+//   window.location.assign("../contacts/contacts.html") ;
+  
+}
