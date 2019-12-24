@@ -36,23 +36,37 @@ const email2 =  document.getElementById("inputEmail2") ;
 
 const save2 = document.getElementById("savePage2");
 
-save2.addEventListener("click" , ()=>{
+save2.addEventListener("keydown",function(e){
+    if(e.key==="Enter"){
+      main();
+    } });
+
+save2.addEventListener("click" ,main()) ; 
+
+function main( ){
     console.log("hi");
     var n = name.value , 
        p= position.value ,
        m = mobile.value , 
        em = email2.value ; 
 
-       obj = {
-           name : n , 
+
+
+ fetch('http://localhost:6600/contactPage2',{
+  method:'POST',
+  headers : my , 
+  body:JSON.stringify({
+            name : n , 
            position : p  , 
            mobile : m , 
            email : em 
-       } ; 
+   })
+}).then( response=>response.json()) .then((data) => { obj.push(data) ; console.log(data); });
+   
        console.log( obj ) ; 
       // save2.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage2"> Save </button></a>' ; 
-       window.location.assign("../contacts/contacts.html") ;
-});
+      // window.location.assign("../contacts/contacts.html") ;
+};
 
 	
 
