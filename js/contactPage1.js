@@ -24,7 +24,8 @@ var  v = venue.value  ,
     phone : p  ,  
     email : e
 } ; 
-   console.log( obj ); 
-   save1.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage1"> Save </button></a>' ; 
-   
+   console.log( obj );
+  // save1.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage1"> Save </button></a>' ; 
+//   window.location.assign("../contacts/contacts.html") ;
+  
 });

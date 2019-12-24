@@ -50,8 +50,8 @@ save2.addEventListener("click" , ()=>{
            email : em 
        } ; 
        console.log( obj ) ; 
-       save2.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage2"> Save </button></a>' ; 
-   
+      // save2.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage2"> Save </button></a>' ; 
+       window.location.assign("../contacts/contacts.html") ;
 });
 
 	
