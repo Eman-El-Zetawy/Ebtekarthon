@@ -1,5 +1,5 @@
 
-body{
+ body{
   background: url("../images/dev4.png") center bottom repeat-y;
 
 }
@@ -113,12 +113,12 @@ section.speaking-section {
 	 
 	 
 	  
-	  /* On mouse-over, add a deeper shadow */
+	  /* // On mouse-over, add a deeper shadow  */
 	  .card:hover {
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	  }
 	  
-	  /* Add some padding inside the card container */
+	  /* // Add some padding inside the card container  */
 	  .container {
 		padding: 2px 16px;
 		 
@@ -127,7 +127,8 @@ section.speaking-section {
 	  .card {
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		transition: 0.3s;
-		border-radius: 5px; /* 5px rounded corners */
+		border-radius: 5px; 
+		/* // 5px rounded corners  */
 		float: left;
 		margin: 25px ;
 		width: 20%;
@@ -137,13 +138,14 @@ section.speaking-section {
 	  .maincard {
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		transition: 0.3s;
-		border-radius: 5px; /* 5px rounded corners */
+		border-radius: 5px; 
+		/* // 5px rounded corners  */
 		float: left;
 		margin: 25px;
 		width: 20%;
 	  }
-	  /* Add rounded corners to the top left and the top right corner of the image */
-	
+	  /* // Add rounded corners to the top left and the top right corner of the image 
+	 */
 	.fileInput{
 		display: none;
 	}
@@ -154,9 +156,9 @@ section.speaking-section {
 		padding-bottom: 20px;
 	}
 	
-	textarea{
-		margin: 5%;
-	}
+	
+
+	
 	
 
       
