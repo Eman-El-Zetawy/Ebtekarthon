@@ -74,15 +74,13 @@ body {
 
 }
 .schedule-post {
-	border: 1px solid black;
-	border: 1px solid black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 	margin: 10px;
 	width: 300px;
 	margin-left: 50px;
 	height:auto;
 	margin: 0 auto;
-	background-color: #fcf9f2;
 	position: relative;
 }
 
