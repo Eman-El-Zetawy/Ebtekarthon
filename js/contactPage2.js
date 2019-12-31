@@ -22,16 +22,16 @@ const my =new Headers();
 my.append('Content-Type', 'application/json');
 
 var obj = { };
-const e4 =  document.getElementById('error4') ;
-const e5 =  document.getElementById('error5') ;
-const e6 =  document.getElementById('error6') ;
-const e7 =  document.getElementById('error7') ;
+// const e4 =  document.getElementById('error4') ;
+// const e5 =  document.getElementById('error5') ;
+// const e6 =  document.getElementById('error6') ;
+// const e7 =  document.getElementById('error7') ;
 
 
 const name =  document.getElementById("inputName") ;
 const position =  document.getElementById("inputPosition") ;
 const mobile =  document.getElementById("inputMobile") ;
-const email2 =  document.getElementById("inputEmail2") ; 
+const email =  document.getElementById("inputEmail2") ; 
 
 
 const save2 = document.getElementById("savePage2");
@@ -47,11 +47,11 @@ function main( ){
     console.log("hi");
     var n = name.value , 
        p= position.value ,
-       m = mobile.value , 
-       em = email2.value ; 
+       m = mobile.value ,  
+       em = email.value ; 
 
 
- fetch('http://localhost:6500/contactPage2',{
+ fetch('http://localhost:3000/post',{
   method:'POST',
   headers : my , 
   body:JSON.stringify({
@@ -60,7 +60,8 @@ function main( ){
            mobile : m , 
            email : em 
    })
-}).then( response=>response.json()) .then((data) => { obj = data ; console.log(data); });
+}).then( response=>response.json()).then((data) => {
+     obj = data ; console.log(data); });
    
        console.log( obj ) ; 
       // save2.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage2"> Save </button></a>' ; 

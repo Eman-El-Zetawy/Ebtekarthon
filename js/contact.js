@@ -1,24 +1,24 @@
-let r = " " , rr =""; 
+let  rr =""; 
 
- const add1 = document.getElementById("add1");
+
  const add2  = document.getElementById("add2");
- const  card1 =  document.getElementById("newCard");
+ 
  const  card2 =  document.getElementById("newMain");
 
- renderPage1();
+ 
  renderPage2();
 
- function renderPage1 (){
-     r = '<div class="card">'+
-    '<img class="contact-img" src="../images/IMG12.jpg" alt="Avatar">' +
-     '<div class="container">'+
-         '<h4><b>Our Contacts</b></h4>'+
-         '<p>Num Phon</p>'+
-             '<button class="button"  id="delete1"><strong>DELETE</strong></button>'+
-     '</div><br></div>'; 
+//  function renderPage1 (){
+//      r = '<div class="card">'+
+//     '<img class="contact-img" src="../images/IMG12.jpg" alt="Avatar">' +
+//      '<div class="container">'+
+//          '<h4><b>Our Contacts</b></h4>'+
+//          '<p>Num Phon</p>'+
+//              '<button class="button"  id="delete1"><strong>DELETE</strong></button>'+
+//      '</div><br></div>'; 
 
-     card1.innerHTML += r ; 
- }
+//      card1.innerHTML += r ; 
+//  }
 
 function renderPage2 (){
     rr='<div class="maincard">' +
@@ -31,10 +31,10 @@ function renderPage2 (){
             card2.innerHTML += rr ; 
         }
 
-// // const my =new Headers();
-// // my.append('Content-Type', 'application/json');
+const my =new Headers();
+my.append('Content-Type', 'application/json');
 // // var a =[] ,c=[] ,  l="" , h ="";
-// // const b = ["name" , "position" ,"mobile" , "email" , "logo"] , 
+ const b = ["name" , "position" ,"mobile" , "email" ] , 
 // // 
 // // fetch('http://localhost:6600/contactp',{
 // //     method:'GET', 
