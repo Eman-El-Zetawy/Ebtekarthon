@@ -34,11 +34,15 @@ function renderPage2 (){
 const my =new Headers();
 my.append('Content-Type', 'application/json');
 // // var a =[] ,c=[] ,  l="" , h ="";
- const b = ["name" , "position" ,"mobile" , "email" ] , 
-// // 
-// // fetch('http://localhost:6600/contactp',{
-// //     method:'GET', 
-// //     headers : my })  .then( res => res.json())  .then((data) => {a=data;  draw(a) ; });
+ const b = ["name" , "position" ,"mobile" , "email" ] ;
+
+fetch('http://localhost:3000/contactp',{
+    method:'GET', 
+    headers : my }).then( res => res.json()).then((data) => 
+    {a=data;
+console.log(a);
+        //  draw(a) ;
+         });
 
 // //     fetch('http://localhost:6600/contacts',{
 // //         method:'GET', 
