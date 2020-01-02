@@ -14,19 +14,10 @@ document.getElementById('imgInp').addEventListener('click', () => {
     document.getElementById("imgInp").addEventListener("change" ,function(){
                 readURL(this);
             });
-    // document.getElementById("imgInp").change(function(){
-    //     readURL(this);
-    // }); 
+  
 
 const my =new Headers();
 my.append('Content-Type', 'application/json');
-
-var obj = { };
-// const e4 =  document.getElementById('error4') ;
-// const e5 =  document.getElementById('error5') ;
-// const e6 =  document.getElementById('error6') ;
-// const e7 =  document.getElementById('error7') ;
-
 
 const name =  document.getElementById("inputName") ;
 const position =  document.getElementById("inputPosition") ;
@@ -34,36 +25,29 @@ const mobile =  document.getElementById("inputMobile") ;
 const email =  document.getElementById("inputEmail2") ; 
 
 
-const save2 = document.getElementById("savePage2");
+const save = document.getElementById("savePage2");
 
-save2.addEventListener("keydown",function(e){
+save.addEventListener("keydown",function(e){
     if(e.key==="Enter"){
       main();
     } });
 
-save2.addEventListener("click" ,main) ; 
+save.addEventListener("click" ,main) ; 
 
 function main( ){
-    console.log("hi");
-    var n = name.value , 
-       p= position.value ,
-       m = mobile.value ,  
-       em = email.value ; 
-
-
- fetch('http://localhost:3000/post',{
+console.log("isrun");
+ fetch('http://localhost:3000/contact',{
   method:'POST',
   headers : my , 
   body:JSON.stringify({
-            name : n , 
-           position : p  , 
-           mobile : m , 
-           email : em 
+            name :  name.value, 
+           position : position.value , 
+           mobile : mobile.value  , 
+           email :  email.value
    })
 }).then( response=>response.json()).then((data) => {
-     obj = data ; console.log(data); });
+    console.log(data); });
    
-       console.log( obj ) ; 
       // save2.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage2"> Save </button></a>' ; 
       // window.location.assign("../contacts/contacts.html") ;
 };
