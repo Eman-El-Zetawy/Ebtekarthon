@@ -41,7 +41,7 @@ save2.addEventListener("keydown",function(e){
       main();
     } });
 
-save2.addEventListener("click" ,main()) ; 
+save2.addEventListener("click" ,main) ; 
 
 function main( ){
     console.log("hi");
