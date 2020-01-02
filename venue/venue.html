@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
+	<title>Contacts </title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="../style/contacts.css" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../style/headerlogo.css">
-	<link rel="stylesheet" href="css.css">
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.js"
-		integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../style/fonts.min.css">
+
 </head>
 
 <body>
+
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 
@@ -48,8 +46,8 @@
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../contacts/contacts.html">Contacts</a></li>
 						<li class="nav-item drop-link">
-							<a class="nav-link" href="../SocialMedia/socialmedia.html">Social Media</a></li>
-							<li class="nav-item drop-link">
+                            <a class="nav-link" href="../SocialMedia/socialmedia.html">Social Media</a></li>
+                            <li class="nav-item drop-link">
                                 <a class="nav-link" href="../venue/venue.html">Venue</a></li>
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../logout/login.html">Log Out</a></li>
@@ -57,23 +55,40 @@
 			</div>
 		</div>
 	</nav>
-
-	<div class="model-dialog text-center">
-
-		<div class="col-sm-12 main-section">
-			<h1 class="h1"> Select new Header Logo : </h1>
-			<p> </p>
-			<hr>
-			<form>
-				<div class="form-group">
-					<input id="fileInput" type="file" />
-					<img class="col-sm-20" id="imgInp" src="../images/logo.png">
-				</div>
-			</form>
+	<section class="section" id="section">
+		<h1 class="h1">Our Venue : </h1>
+		<hr>
+		
+		
+		<div class="card">
+			<img class="contact-img" src="../images/IMG12.jpg" alt="Avatar">
+			<div class="container">
+				<h4><b>Our Venue</b></h4>
+				<p>Num Phon</p>
+				<a href="../venue/enterpage.html">
+					<button
+						class="button"  id ="add1"  ><strong>ADD</strong></button>
+					</a>
+				
+			</div><br>
 		</div>
-
-	</div>
-	<script src="../js/speaker.js"></script>
+		<div id= "newCard" ></div>
+		
+		 
+		<!-- <div class="maincard">
+			<img class="img2" src="../images/alcont.png" alt="Avatar">
+			<div class="container">
+				<h4><b>Click here to add Contact</b></h4>
+				<p></p><br>
+				<a href="../justInCaseContact/contactpage2.html">
+					<button class="button"  id="add2" ><strong>ADD</strong></button>
+				</a>
+				<br>
+			</div><br>
+		</div>
+			<div id ="newMain"></div> -->
+	
+</section>
+	<script src="../js/contact.js"></script>
 </body>
-
 </html>
