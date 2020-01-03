@@ -1,3 +1,7 @@
+function contact(){
+    location.replace("../contacts/contacts.html");
+}
+
 document.getElementById('imgInp').addEventListener('click', () => {
     document.getElementById('fileInput').click()
   })
@@ -46,10 +50,12 @@ console.log("isrun");
            email :  email.value
    })
 }).then( response=>response.json()).then((data) => {
-    console.log(data); });
+    console.log(data); 
+
+ // contact(); 
+});
    
-      // save2.innerHTML = ' <a href ="../contacts/contacts.html">' + '<button class="save"  id="savePage2"> Save </button></a>' ; 
-      // window.location.assign("../contacts/contacts.html") ;
+   
 };
 
 	

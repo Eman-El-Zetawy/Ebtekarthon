@@ -35,7 +35,7 @@ function render (a){
                 })
                 })
                 .then( res => res.json())
-                .then(data => {  draw(z);
+                .then(data => {  
                 console.log("done  delete"  );  
 });
         }
