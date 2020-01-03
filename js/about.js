@@ -13,7 +13,7 @@ my.append('Content-Type', 'application/json');
 
 var a =[];
 
-fetch('http://localhost:6600/about',{
+fetch('http://localhost:3000/about',{
     method:'GET', 
     headers : my })  .then( res => res.json())  .then((data) => {a=data;  draw(a) ;});
 
@@ -55,7 +55,7 @@ save.addEventListener("click" , ()=>{
     }
 
 if(a&&b&&c){
-    fetch('http://localhost:6600/about' ,{
+    fetch('http://localhost:3000/about' ,{
         method:'PUT',
         headers : my , 
         body: JSON.stringify({
