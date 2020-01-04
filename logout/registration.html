@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../style/logout.css">
+	
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+
+			<a class="navbar-brand">
+				<img src="../images/logo.png" onclick="header()" alt="" ></a>
+
+			<!--this is button to responsive for ul>list below-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span></button>
+
+			<!--Options-->
+			
+		</div>
+	</nav>
+
+	
+		<div class="model-dialog text-center">
+			<div class="col-sm-9 main-section">
+				<div class="model-content">
+					
+					<div class="col-12 user-img"></div>
+					<img src="logo.png" id="logo" alt="logo">
+				</div>
+				
+				<div class="col-12 form-input">
+					<form>
+						<div class="form-group">
+							<input id="username" type="username" class="form-control" placeholder="Username">
+						</div>
+						<div class="form-group">
+							<input id="email" type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+							<input id="password" type="password" class="form-control" placeholder="Password ">
+                        </div> 
+					</form>
+					<button onclick="adduser()" type="submit">SAVE</button>
+				
+				</div>
+			</div>
+			
+		</div>
+	<script src="../js/login.js"></script>
+</body>
+</html>
