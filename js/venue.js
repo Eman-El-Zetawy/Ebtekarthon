@@ -3,7 +3,6 @@ const phone =  document.getElementById("inputPhone") ;
 const email =  document.getElementById("inputEmail") ;
 const save = document.getElementById("save");
 
-
 const my =new Headers();
 my.append('Content-Type', 'application/json');
 
