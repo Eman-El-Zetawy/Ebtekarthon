@@ -16,8 +16,8 @@ save.addEventListener("click" , main);
 console.log( venue.value,phone.value ,email.value);
 function main(){
 
-fetch('http://localhost:3000/venue',{
-  method:'POST',
+fetch('http://localhost:3000/venue/1',{
+  method:'PUT',
   headers : my , 
   body:JSON.stringify({
     venue : venue.value, 
