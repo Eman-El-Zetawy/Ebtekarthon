@@ -18,29 +18,43 @@ my.append('Content-Type', 'application/json');
     
 function render (a){
 
-    rr='<div class="maincard">' +
-        '<img class="img2" src="../images/alcont.png" alt="Avatar">' +
-        '<div class="container">' +
-            '<h4><b>The Contact is </b></h4>' +
-            '<p >'+ a.name +a.position  +a.mobile + a.email+'</p>' +
-                '<button class="button"  id="'+ a.id +'"  onclick="del(event)"  ><strong>DELETE</strong></button>' +
-            '<br></div><br></div>' ;
+rr='<div class="maincard">' +
+'<img class="img2" src="../images/alcont.png" alt="Avatar">' +
+'<div class="container">' +
+'<h4><b>'+ a.name + '</b></h4>' +
+'<p ><b>'+ a.position+'</b></p><b>' +a.mobile + a.email+
+'</b><button class="button"  onclick="del(event)"  ><strong  mm ="'+ a.id +'" >DELETE</strong></button>' +
+'<br></div><br></div>' ;
+            console.log(a.id);
             card2.innerHTML += rr ; 
         }
 
-        // document.getElementById("delete").addEventListener("click" , ()=>{
+      //  document.getElementById("delete").addEventListener("click" , del);
 
-        function del (event){
-            const i = event.target.getAttribute('id') ;
+        function del(event){
 
-             fetch('http://localhost:3000/contact/'+i ,{
+           let l =[];
+            let i = event.target.getAttribute('mm') ;
+            l.push(i);
+             arr.forEach((o,j)=>{ if( o.id == i){arr.splice(j,1); }});
+                
+
+            
+            console.log(i);
+             fetch('http://localhost:3000/contact/' ,{
                 method:'DELETE',
-                headers : my 
+                headers : my ,
+                body:JSON.stringify({
+                    id : l })
                 })
                 .then( res => res.json())
                 .then(data => {  
                 console.log("done  delete"  );  
-                // card2.innerHTML = "" ;
+                card2.innerHTML = "" ;
+                arr.forEach(obj=> {
+                    render(obj); 
+               });
+                // 
 });
         }
 
