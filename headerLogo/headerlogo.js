@@ -19,7 +19,7 @@
  });
  imgInp.addEventListener('click', () => {
      inputfile.click()
- })
+ });
 
  inputfile.onchange = function () {
      var file = inputfile.files[0],
@@ -35,7 +35,7 @@
  document.getElementById('buttonSave').addEventListener('click', add);
 
  function add() {
-     console.log(b64)
+     console.log(b64);
      const myheader = new Headers();
      myheader.append('Content-Type', 'application/json');
      fetch('http://localhost:3000/event', {
@@ -50,7 +50,7 @@
              console.log(data);
              renderlogo();
          })
- }
+ };
 
 
 
@@ -65,7 +65,9 @@ const pathimg =[];
         .then(response => response.json())
         .then((data) => {
         pathimg.push(data[0]);
-      document.getElementById('add').innerHTML = `<input id="fileInput" type="file" /><img class="imgform" src="${data[0].headerlogo}" id="imgInp" alt="Avatar">`
+
+        document.getElementById('imgInp').src = data[0].headerlogo;
+    //   document.getElementById('add').innerHTML = `<input id="fileInput" type="file" /><img class="imgform" src="${data[0].headerlogo}" id="imgInp" alt="Avatar">`
         });
         
- }
+ };
