@@ -22,7 +22,7 @@ document.getElementById('imgInp').addEventListener('click', () => {
     my.append('Content-Type', 'application/json');
 
 var save = document.getElementById("save");
-const website = document.getElementById("name");
+const wsite = document.getElementById("name");
 
 save.addEventListener("keydown",function(e){
     if(e.key==="Enter"){
@@ -37,7 +37,8 @@ console.log("isrun");
   method:'POST',
   headers : my , 
   body:JSON.stringify({
-            website :  website.value, 
+            img : "test",
+            wsite :  wsite.value
         
    })
 }).then( response=>response.json()).then((data) => {
