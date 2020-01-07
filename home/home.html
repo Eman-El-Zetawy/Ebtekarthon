@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
 	<title>Home</title>
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../style/fonts.min.css">
@@ -44,7 +44,7 @@
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../contacts/contacts.html">Contacts</a></li>
 						<li class="nav-item drop-link">
-							<a class="nav-link" href="../SocialMedia/socialmedia.html">Social Media</a></li>
+							<a class="nav-link" href="../SocialMedia/index.html">Social Media</a></li>
 							<li class="nav-item drop-link">
                                 <a class="nav-link" href="../venue/venue.html">Venue</a></li>
 					<li class="nav-item drop-link">
@@ -59,22 +59,23 @@
 		<div class="form">
 		<div class="schedule-block">
 			<input id="fileInput" type="file" />
+			<div id="add">
 			<img class="imgform" src="../images/homIm.jpg" id="imgInp" alt="Avatar">
-				<p id="error1"></p>
-			<input type="text" placeholder="Title" id="inputTitle">
-			<p id="error2"></p>
-			<input type="text" placeholder=" Location" id="inputLocation">
-			<p id="error3"></p>
-			<input type="text" placeholder="Date" id="inputDate">
-			<p id="error4"></p>
+			
+			<input type="text" placeholder="Title" id="title">
+			
+			<input type="text" placeholder=" Location" id="location">
+			
+			<input type="text" placeholder="Date" id="date">
+		</div>
 			<hr>
 			<button id="buttonSave"> Save </button>
 			<hr>
 		</div>
 		</div>
 	</section>
-	<script src="../js/speaker.js"></script>
-	<!--<script src="../js/home.js"></script>-->
+	<script src="home.js"></script>
+	
 </body>
 
 </html>
