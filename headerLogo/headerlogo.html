@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Header LOGO</title>
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../style/headerlogo.css">
-	<link rel="stylesheet" href="css.css">
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.js"
-		integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../style/fonts.min.css">
+	<link type="text/css" rel="stylesheet" href="../style/home.css" />
 </head>
 
 <body>
@@ -20,7 +16,7 @@
 		<div class="container-fluid">
 
 			<a class="navbar-brand">
-				<img src="../images/logo.png" alt=""></a>
+				<img src="../images/headerlogo/logo.png" alt=""></a>
 
 			<!--this is button to responsive for ul>list below-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -48,7 +44,7 @@
 					<li class="nav-item drop-link">
 						<a class="nav-link" href="../contacts/contacts.html">Contacts</a></li>
 						<li class="nav-item drop-link">
-							<a class="nav-link" href="../SocialMedia/socialmedia.html">Social Media</a></li>
+							<a class="nav-link" href="../SocialMedia/index.html">Social Media</a></li>
 							<li class="nav-item drop-link">
                                 <a class="nav-link" href="../venue/venue.html">Venue</a></li>
 					<li class="nav-item drop-link">
@@ -57,23 +53,26 @@
 			</div>
 		</div>
 	</nav>
-
-	<div class="model-dialog text-center">
-
-		<div class="col-sm-12 main-section">
-			<h1 class="h1"> Select new Header Logo : </h1>
-			<p> </p>
+	<section class="speaking-section" id="speaking-section">
+		<br> <br>
+		<h1 class ="h1">Head LOGO : </h1>  <p> </p>   <hr>
+		<div class="form">
+		<div class="schedule-block">
+			
+			<div id="add">
+				<input id="fileInput" type="file" />
+			<img class="imgform" src="../images/headerlogo/logo.png" id="imgInp" alt="Avatar">
+				
+			</div>
+			<p id="error1"></p>
 			<hr>
-			<form>
-				<div class="form-group">
-					<input id="fileInput" type="file" />
-					<img class="col-sm-20" id="imgInp" src="../images/logo.png">
-				</div>
-			</form>
+			<button id="buttonSave"> Save </button>
+			<hr>
 		</div>
-
-	</div>
-	<script src="../js/speaker.js"></script>
+		</div>
+	</section>
+	<script src="../js/headerlogo.js"></script>
+	
 </body>
 
 </html>
