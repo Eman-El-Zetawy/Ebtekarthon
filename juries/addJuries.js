@@ -17,7 +17,7 @@
          
       });
     
-      let NewSpeaker= document.getElementById('newspeaker');
+      let juries= document.getElementById('newjuries');
   
       function RenderingJuries(d){
           console.log(d);
@@ -30,7 +30,7 @@
           </div>
       </div>`
   
-      NewSpeaker.innerHTML+= add;
+      juries.innerHTML+= add;
       
     }
 
@@ -57,7 +57,7 @@ if(obj.id==id){
            .then( res => res.json())
            .then(data => {  
            console.log(data);  
-           NewSpeaker.innerHTML ="";
+           juries.innerHTML ="";
            arr.forEach(obj=>{
                RenderingJuries(obj);           })
     }
