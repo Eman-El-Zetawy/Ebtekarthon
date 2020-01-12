@@ -32,14 +32,10 @@ rr='<div class="maincard">' +
       //  document.getElementById("delete").addEventListener("click" , del);
 
         function del(event){
-
            let l =[];
             let i = event.target.getAttribute('mm') ;
             l.push(i);
              arr.forEach((o,j)=>{ if( o.id == i){arr.splice(j,1); }});
-                
-
-            
             console.log(i);
              fetch('http://localhost:3000/contact/' ,{
                 method:'DELETE',
@@ -57,9 +53,6 @@ rr='<div class="maincard">' +
                 // 
 });
         }
-
-// // // var a =[] ,c=[] ,  l="" , h ="";
-//  const b = ["name" , "position" ,"mobile" , "email" ] ;
 
 
 

@@ -2,11 +2,14 @@ const inputfile = document.getElementById("fileInput"),
     imgInp = document.getElementById('imgInp'),
     title = document.getElementById('title'),
     location1 = document.getElementById('location'),
-    date = document.getElementById('date'),
-    d64 = "";
+    date = document.getElementById('date');
+  var   d64 = "";
+
     renderhome() ;
+
 function readURL(input) {
     console.log(input.files && input.files[0]);
+    
     if (input.files && input.files[0]) {
         var reader = new FileReader();
 
