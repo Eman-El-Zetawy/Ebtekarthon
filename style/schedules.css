@@ -71,14 +71,8 @@ body {
 	position: relative;
 	height: auto;
 	display: flex;
+	overflow: hidden;
 
-}
-
-.schedule-box {
-	margin-left: 70px;
-	margin-right: 70px;
-	width: 300px;
-	height: auto;
 }
 
 .schedule-post {
@@ -245,4 +239,9 @@ h5 {
 
 .post:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#day{
+	display: flex;
+	margin-left: 20px;
+	position: relative;
 }
