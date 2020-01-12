@@ -5,7 +5,7 @@ function levelTwo() {
 function saveDay() {
 		location.replace("../schedules/schedules.html");
 	}
-// hamza trash>>here after we set up the data base,& method post, the main page of schedule we get the result from here.
+
 function day() {
 	var str="";
 	var createday = document.getElementById('dateDay').value;
@@ -19,4 +19,23 @@ function day() {
 	 newl.textContent= str;
 	 show.appendChild(newl);
 }
+const myHeader =new Headers();
+myHeader.append('Content-Type', 'application/json');
+const save = document.getElementById('save').addEventListener('click', dayFactory);
+
+function dayFactory( ){
+	const title = document.getElementById('title');
+	const datetime = document.getElementById('datetime');
+	 fetch('http://localhost:3000/addDay',{
+	  method:'POST',
+	  headers : myHeader , 
+	  body:JSON.stringify({
+				title :  title.value, 
+				datetime: datetime.value
+	   })
+	}).then( response=>response.json())
+	  .then((data) => {
+		console.log(data); 
+	}); 
+	};
 
