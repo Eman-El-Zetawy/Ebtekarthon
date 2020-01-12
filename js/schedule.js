@@ -5,10 +5,10 @@ function levelTwo() {
 function addEvent() {
 	location.replace("../schedules/addEvent.html");
 }
-// function removeDay() {
-// 	 var day = document.getElementById('day');
-//     day.remove();
-// }
+function removeDay() {
+	 var day = document.getElementById('day');
+    day.remove();
+}
 let array = {};
 let str = "";
 const day = document.getElementById('day');
@@ -28,13 +28,19 @@ fetch('http://localhost:3000/day', {
 	});
 
 function render(key) {
-	str =
+	str = 
+	    '<div class="row">'+
 		'<div class="schedule-post">' +
-		'<input type="button" onclick="delet()" id="deleteDay">' +
+		'<input type="button" onclick="removeDay(this)" id="deleteDay">' +
 		'<input type="button" onclick="addEvent()" id="edit"><br>' +
 		'<div class="schedule-content">' +
 		'<h3 id="show">' + key.day_date + '</h3>' +
 		'<hr>' +
+		'<img src="" alt="" id="break">' +
+		'<h5>' + key.time + '</h5>' +
+		'<h6>' + key.title + '</h6>' +
+		'<hr>'+
+		'</div>' +
 		'</div>' +
 		'</div>';
 	day.innerHTML += str;
@@ -56,9 +62,6 @@ function delet() {
 		});
 }
 ////////////////// event ////////
-
-let arr = {};
-let strg = "";
 fetch('http://localhost:3000/eventInf', {
 		method: 'GET',
 		headers: myheader
@@ -66,20 +69,6 @@ fetch('http://localhost:3000/eventInf', {
 	.then((data) => {
 		arr = data;
 		arr.forEach(yy => {
-			rende(yy);
+			render(yy)
 		});
 	});
-
-function rende(key) {
-	strg =
-		'<img src="" alt="" id="break">' +
-		'<h5>' + key.time + '</h5>' +
-		'<h6>' + key.title + '</h6>' +
-		'<hr>';
-
-	var z = document.createElement('div'); 
-	day.innerHTML += strg;
-	document.body.appendChild(z);
-	
-
-}
