@@ -25,16 +25,12 @@ my.append('Content-Type', 'application/json');
 var save = document.getElementById("save");
 const wsite = document.getElementById("name");
 
-<<<<<<< HEAD
 save.addEventListener("keydown", function (e) {
 	if (e.key === "Enter") {
 		main();
 	}
-=======
-save.addEventListener("keydown",function(e){
-    if(e.key==="Enter"){
-      main();
-    } });
+});
+
 
 save.addEventListener("click" ,main) ; 
 
@@ -51,23 +47,6 @@ console.log("isrun");
 }).then( response=>response.json()).then((data) => {
     console.log(data);
  // partners() ;
->>>>>>> 7e1251974d1bfa82b78b652ced7a8d7a71934f80
+
 });
-
-save.addEventListener("click", main);
-
-function main() {
-	console.log("isrun");
-	fetch('http://localhost:3000/partners', {
-		method: 'POST',
-		headers: my,
-		body: JSON.stringify({
-			website: website.value,
-
-		})
-	}).then(response => response.json()).then((data) => {
-		console.log(data);
-		// partners() ;
-	});
-
-};
+}
