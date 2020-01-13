@@ -37,7 +37,7 @@ function render(key) {
 		'<h3 id="show">' + key.day_date + '</h3>' +
 		'<hr>' +
 		'<img src="" alt="" id="break">' +
-		'<h5>' + key.time + '</h5>' +
+		'<h5>' + key.e + '</h5>' +
 		'<h6>' + key.title + '</h6>' +
 		'<hr>'+
 		'</div>' +
