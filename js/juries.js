@@ -17,7 +17,7 @@ document.getElementById('imgInp').addEventListener('click', () => {
         readURL(this);
     });
       /////////
-      input   = document.getElementById("fileInput");
+    let  input   = document.getElementById("fileInput");
       let b64 = "";
       input.onchange = function () {
         var file = input.files[0],
@@ -59,7 +59,7 @@ document.getElementById('imgInp').addEventListener('click', () => {
         position : Position,
         email : Email,
         BIO : JurisBIO,
-        img :"test"
+        img :input
      })
   }).then( response=>response.json()).then(data=> console.log(data));
   
