@@ -1,14 +1,13 @@
- 
-   let arr = [] , add = "" ;        
- const juries = document.getElementById('newjuries');
-
-const myHeader = new Headers();
+ const myHeader = new Headers();
  myHeader.append('Content-Type', 'application/json');
-
+ 
+ let arr = [];
  fetch('http://localhost:3000/juries', {
    meathod: 'GET',
    headers: myHeader
  }).then(response => response.json()).then(data => {
+
+   // let arr = [];
    console.log(data);
    arr = data;
    arr.forEach(item => {
@@ -16,48 +15,57 @@ const myHeader = new Headers();
    });
 
  });
+console.log(arr);
+ let juries = document.getElementById('newjuries');
 
-
-
- function RenderingJuries(d) {
-   console.log(d);
-    add = '<div class="maincard">' +
-     '<img src="../images/IMG12.jpg" alt="Avatar">' +
-     '<div class="container">' +
-     '<h4><b>' + d.name + '</b></h4>' +
-     '<p>' + d.bio + '</p><br>' +
-     '<button class="button"  onclick ="DeleteJuries(event)" ><strong  id="'+d.id+'" > DELETE </strong ></button>'+
-          '</div></div>' ; 
-
+ function RenderingJuries(data) {
+   console.log(data);
+   let add = `<div class="card">` +
+     `<img src="../images/IMG12.jpg" alt="Avatar">` +
+     `<div class="container">` +
+     `<h4><b>` + data.name + `</b></h4>` +
+     `<p>` + data.bio + `</p><br>` +
+     `<button class="button"  onclick ="DeleteJuries(this.id)" id=` + data.id + `> <strong> DELETE </strong ></button>
+          </div>
+      </div>`;
+    console.log(data.id);
    juries.innerHTML += add;
 
  }
 
- function DeleteJuries(event) {
-  let  i= event.target.getAttribute('id');
+ function DeleteJuries(id) {
+   //let id = this.onclick;
+  //  let id = event.target.getAttribute('index');
+   console.log(id);
+   const myHeader = new Headers();
+   myHeader.append('Content-Type', 'application/json');
 
-   console.log(i);
-    
-   fetch('http://localhost:3000/juries/',{
+   fetch('http://localhost:3000/juries/', {
        method: 'DELETE',
        headers: myHeader,
        body: JSON.stringify({
-         id: i})
-      })
-      .then(response => response.json()).then(data => { 
-       console.log(data);
-
-       console.log("done delete ");
-
-       arr.forEach((obj, index)=> {
-           if (obj.id == i) {
-             arr.splice(index, 1);
-          } });
+         id: id
+       })
+     })
+     .then(res => {
+      console.log(res);
+       if (res.status === 200) {
+         
+        console.log(res.status);
+         arr.forEach((obj, index) => {
           
+           if (obj.id == id) {
+             
+             arr.splice(index, 1);
+          }
+           }); 
            juries.innerHTML = "";
           arr.forEach(obj => {
             RenderingJuries(obj);
           
-         })
+         });
+
+        }  
+       
      });
     }

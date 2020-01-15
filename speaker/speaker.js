@@ -1,71 +1,68 @@
-const express = require('express');
-router = express.Router(),
-    routeBase = '/speaker',
-    {createDatabaseConnection, DB_NAME} = require('../dataBase/config.js');
-
-   
-
-    router.post(routeBase, (req, res) => {
-        createDatabaseConnection((error, connection) => {
-            if (error) {
-                req.status(500);
-                return;
-            }
-            let sql=`INSERT INTO ${DB_NAME}.speaker_inf (name,position,email,bio,img) VALUES ('`+ req.body.name +`' , '`+req.body.position +`' , '`+req.body.email +`' , '`+req.body.BIO +`' , '`+req.body.img + `');`;
-            connection.query(sql, function (err, result) {
-            if (err) throw err;
-            let data = { id :result.insertId ,
-                name : req.body.name ,
-                 position : req.body.position ,
-                 email:req.body.email,
-                 BIO:req.body.BIO,
-                 img:req.body.img
-            }
-            res.header("Access-Control-Allow-Origin", "*");
-            res.header("Access-Control-Allow-Headers", "*");
-            console.log(result);
-            console.log(data);
-            connection.end();
-            res.send(data);
+document.getElementById('imgInp').addEventListener('click', () => {
+    document.getElementById('fileInput').click()
+    
+  })
+    function readURL(input) {
+        console.log(input.files && input.files[0]);
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
             
-        });
-    });
-    });
-
-    router.delete(routeBase + '/', (req, res) => {
-        res.header("Access-Control-Allow-Origin", "*");
-        res.header("Access-Control-Allow-Headers", "*");
-     console.log(req.body);
-     let id=req.body.id;
-     
-     createDatabaseConnection((error, connection) => {
-       if (error) {
-           req.status(500);
-           return;
-       }
-       connection.query(`DELETE FROM ${DB_NAME}.speaker_inf WHERE id IN (`+id  +`)`, function (err, result) {
-        if (err) throw err ; 
-        connection.end();
-        return res.status(201).send(result);
-     }); 
-     });
-     });
-
-
-router.get(routeBase, (req, res) => {
-    createDatabaseConnection((error, connection) => {
-        if (error) {
-            req.status(500)
-            return;
+            reader.onload = function (e) {
+                document.getElementById("imgInp").setAttribute('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
         }
-        connection.query(`SELECT * FROM  ${DB_NAME}.speaker_inf `, function (err, result) {
-        if (err) throw err;
-        res.header("Access-Control-Allow-Origin", "*");
-        res.header("Access-Control-Allow-Headers", "*");
-        console.log(result);
-        connection.end();
-        res.send(result);
+    }
+    document.getElementById("fileInput").addEventListener("change" , function(){
+        readURL(this);
     });
-});
-});
-module.exports = router;
+      /////////
+      input   = document.getElementById("fileInput");
+      let b64 = "";
+      input.onchange = function () {
+        var file = input.files[0],
+          img = new FileReader();
+        img.onloadend = function () {
+          b64 = img.result.replace(/^data:.+;base64,/, '');
+          console.log(b64);
+        };
+        img.readAsDataURL(file);
+      };
+  
+    
+  
+  const save = document.getElementById("save");
+  
+  save.addEventListener("keydown",function(e){
+    if(e.key==="Enter"){
+      add();
+    } });
+  
+  save.addEventListener("click" , add);
+  let array=[];
+   
+      function add(){
+        let SpeakerName =document.getElementById("name").value ;
+        let SpeakerPosition =document.getElementById("position").value ;
+        let SpeakerEmail =document.getElementById("email").value ;
+        let SpeakerBIO =document.getElementById("brif").value ;
+  
+        const myHeader =new Headers();
+        myHeader.append('Content-Type', 'application/json');
+    
+  
+        fetch('http://localhost:3000/speaker',{
+        method:'POST',
+        headers: myHeader,
+        body:JSON.stringify({
+        name : SpeakerName , 
+        position : SpeakerPosition,
+        email : SpeakerEmail,
+        BIO : SpeakerBIO,
+        img :"test"
+     })
+  }).then( response=>response.json()).then(data=> console.log(data));
+  
+  }
+
+

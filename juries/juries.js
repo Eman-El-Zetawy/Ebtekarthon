@@ -59,7 +59,7 @@ document.getElementById('imgInp').addEventListener('click', () => {
         position : Position,
         email : Email,
         BIO : JurisBIO,
-        img : input
+        img :input
      })
   }).then( response=>response.json()).then(data=> console.log(data));
   
@@ -72,7 +72,4 @@ document.getElementById('imgInp').addEventListener('click', () => {
 
 function create() {
     location.replace("../juries/Juries2.html")
-}
-function Juries() {
-  location.replace("../juries/Juries1.html")
 }
