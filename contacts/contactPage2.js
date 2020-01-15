@@ -23,7 +23,6 @@ document.getElementById('imgInp').addEventListener('click', () => {
                 readURL(this);
             });
     document.getElementById("imgInp").addEventListener("change" ,function(){
-                // readURL(this);
                 inputfile.click()
             });
   
@@ -56,13 +55,10 @@ save.addEventListener("keydown",function(e){
     if(e.key==="Enter"){
       main();
     } });
-
-
-
 save.addEventListener("click" ,main) ; 
 
 function main( ){
-console.log("isrun");
+
  fetch('http://localhost:3000/contact',{
   method:'POST',
   headers : my , 
@@ -76,15 +72,6 @@ console.log("isrun");
 }).then( response=>response.json()).then((data) => {
     console.log(data); 
 
-  //contact(); 
-});
-   
-   
+  contact(); 
+});  
 };
-
-	
-
-
-
-
-

@@ -15,29 +15,48 @@
      
   }
   input{
-      margin: 5%;
+      margin: 5% 0 ;
   }
+  .img2{
+    margin: 35px 0 ;
+    
+    }
+
+    /* span{
+      margin: 50px 0;
+    } */
+ 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     float: left;
-    margin: 25px ;
-    width: 20%;
+    margin: 25px  90px;
+  width: 22%;
+  font-size :x-large;
+  
+	/* margin-left: 100px; */
   
   }
-  .maincard {
+  
+  .maincard{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     float: left;
-    margin: 25px;
-    width: 20%;
+    margin: 25px  90px;
+  width: 24%;
+  font-size :x-large;
+  
+	/* margin-left: 100px; */
+  
   }
+  
   /* Add rounded corners to the top left and the top right corner of the image */
   img {
     border-radius: 5px 5px 0 0;
     width: 100%;
+    
  
 }
 .imgform{
@@ -50,6 +69,7 @@
     display: block;
     margin: auto;
     width: 30%;
+
 }
 .button {
     cursor: pointer;
@@ -60,10 +80,6 @@
     width: 100%;
     
 }
-textarea{
+ textarea{
     margin: 5%;
-}
-#save{
-  width: 100%;
-  margin-left: 20px;
 }

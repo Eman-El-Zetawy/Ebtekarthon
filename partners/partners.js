@@ -35,7 +35,6 @@ save.addEventListener("keydown", function (e) {
 save.addEventListener("click" ,main) ; 
 
 function main( ){
-console.log("isrun");
  fetch('http://localhost:3000/partners',{
   method:'POST',
   headers : my , 
@@ -46,7 +45,7 @@ console.log("isrun");
    })
 }).then( response=>response.json()).then((data) => {
     console.log(data);
- // partners() ;
+  partners() ;
 
 });
 }
