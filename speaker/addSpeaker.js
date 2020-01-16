@@ -26,9 +26,7 @@
           `<div class="container">`+
               `<h4><b>`+d.name+`</b></h4>`+
               `<p>`+d.bio+`</p><br>`+
-            `<button class="button"  onclick ="DeleteSpeaker(this.id)" id=` + d.id + `> <strong> DELETE </strong ></button>
-            </div>
-        </div>`;
+            `<button class="button"  id=` + d.id + ` onclick ="DeleteSpeaker(this.id)"> <strong> DELETE </strong ></button></div></div>`;
       console.log(d.id);
   
       NewSpeaker.innerHTML+= add;

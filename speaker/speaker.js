@@ -1,5 +1,5 @@
 document.getElementById('imgInp').addEventListener('click', () => {
-    document.getElementById('fileInput').click()
+    document.getElementById('fileInput').click();
     
   })
     function readURL(input) {
@@ -30,15 +30,7 @@ document.getElementById('imgInp').addEventListener('click', () => {
       };
   
     
-  
-  const save = document.getElementById("save");
-  
-  save.addEventListener("keydown",function(e){
-    if(e.key==="Enter"){
-      add();
-    } });
-  
-  save.addEventListener("click" , add);
+
   let array=[];
    
       function add(){
@@ -66,3 +58,13 @@ document.getElementById('imgInp').addEventListener('click', () => {
   }
 
 
+  function create() {
+    if (document.getElementById("name").value =="" && document.getElementById("position").value=="" && document.getElementById("email").value=="" && document.getElementById("brif").value == "" )
+    {
+      
+      alert(" Forms must not be empty!")
+    }
+    else {
+      add();
+    document.getElementById("added").innerHTML="<b>"+" Added successfully, click here to show the result!" +"</b>";}
+  }
