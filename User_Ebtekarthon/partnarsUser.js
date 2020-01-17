@@ -1,3 +1,4 @@
+<<<<<<< HEAD
    let  htmlr  ="" ,  ArrayD=[], arrayData = [] ; 
     const  create =  document.getElementById("create");
  const  card =  document.getElementById("newMain") ;
@@ -45,3 +46,14 @@ htmlr +='<li><a href="'+a.wsite + '" id="'+a.id+'"><img src="./Ebtekarthon_files
                 card.innerHTML = r ;
                }
 					
+=======
+const my = new Headers();
+my.append('Content-Type', 'application/json');
+    fetch('http://localhost:3000/partners',{
+        method:'GET', 
+        headers : my })  .then( res => res.json())  .then((data) => { 
+            console.log(data) ; 
+            arr=data;
+                render(); 
+        });
+>>>>>>> 7a577dcabbcc4ca4d07e2bef9378aac970c5f7fd

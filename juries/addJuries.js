@@ -30,6 +30,7 @@ console.log(arr);
       </div>`;
     console.log(data.id);
    juries.innerHTML += add;
+   
 
  }
 

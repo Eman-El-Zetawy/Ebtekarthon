@@ -30,17 +30,6 @@ document.getElementById('imgInp').addEventListener('click', () => {
       };
   
     
-  
-  const save = document.getElementById("save");
-  
-  save.addEventListener("keydown",function(e){
-    if(e.key==="Enter"){
-      add();
-    } });
-  
-  save.addEventListener("click" , add);
-  let array=[];
-   
       function add(){
         let Name =document.getElementById("name").value ;
         let Position =document.getElementById("position").value ;
@@ -71,5 +60,12 @@ document.getElementById('imgInp').addEventListener('click', () => {
 
 
 function create() {
-    location.replace("../juries/Juries2.html")
+  if (document.getElementById("name").value =="" && document.getElementById("position").value=="" && document.getElementById("email").value=="" && document.getElementById("brif").value == "" )
+  {
+    
+    alert(" Forms must not be empty!")
+  }
+  else {
+    add();
+  document.getElementById("added").innerHTML="<b>"+" Added successfully, click here to show the result!" +"</b>";}
 }
