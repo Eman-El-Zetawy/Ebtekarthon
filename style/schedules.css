@@ -72,15 +72,14 @@ body {
 	height: auto;
 	display: flex;
 	overflow: hidden;
-
 }
 
 .schedule-post {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 	margin: 10px;
-	width: 300px;
-	margin-left: 50px;
+	margin-top: 50px;
+	width: 100%;
 	height: auto;
 	position: relative;
 }
@@ -89,7 +88,6 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 	margin: 10px;
-	width: 300px;
 	margin-left: 50px;
 	height: auto;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -133,7 +131,7 @@ h6 {
 
 }
 
-#deleteDay {
+.deleteDay {
 
 	float: right;
 	display: flex;
@@ -223,7 +221,7 @@ h5 {
 	padding-left: 5px;
 	border-radius: 10px;
 	width: auto;
-	height: auto;
+
 
 }
 
@@ -237,10 +235,8 @@ h5 {
 	position: relative;
 }
 
-.post:hover {
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-#day{
+#schedule{
+	box-sizing: border-box;
 	display: flex;
 	margin-left: 20px;
 	position: relative;
