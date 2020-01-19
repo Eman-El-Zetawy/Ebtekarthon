@@ -5,15 +5,15 @@ myHeader.append('Content-Type', 'application/json');
 const save = document.getElementById('save').addEventListener('click', eventFactory);
 
 function eventFactory(){
-	const title = document.getElementById('datetime');
-	const time = document.getElementById('title');
+	const datetime = document.getElementById('datetime');
+	const title = document.getElementById('title');
 	const dayId = document.getElementById('dayId');
 
 	 fetch('http://localhost:3000/eventInf',{
 	  method:'POST',
 	  headers : myHeader , 
 	  body:JSON.stringify({
-		  		time :  time.value,
+		  		hour :  datetime.value,
 				title :  title.value, 
 				day_id :  dayId.value
 

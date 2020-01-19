@@ -26,5 +26,3 @@ function dayFactory(){
 		console.log(data); 
 	}); 
 	};
-
-	console.log('fthyt')

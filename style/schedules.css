@@ -79,18 +79,13 @@ body {
 	border-radius: 10px;
 	margin: 10px;
 	margin-top: 50px;
-	width: 100%;
+	width: 20%;
 	height: auto;
 	position: relative;
 }
 
 .schedule-post:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	border-radius: 10px;
-	margin: 10px;
-	margin-left: 50px;
-	height: auto;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.2);
 	position: relative;
 }
 
@@ -150,7 +145,25 @@ h6 {
 
 
 }
+.deleteEvent{
+	float: right;
+	display: flex;
+	width: 30px;
+	height: 25px;
+	left: 15px;
+	outline: none;
+	border: none;
+	background-image: url(../images/delete.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 1;
+	z-index: 0;
+	margin-right: 10px;
+	border-radius: 5px;
 
+
+
+}
 #edit {
 
 	width: 30px;
@@ -181,15 +194,16 @@ h6 {
 }
 
 #break {
-	width: 20%;
-	height: auto;
+	width: 15%;
+	height: 8%;
+	border-radius: 50px;
+	display: flex;
 	position: absolute;
 	margin-left: 12px;
 	background-image: url(../images/add.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
 h3 {
 	width: auto;
 	text-align: center;
@@ -209,12 +223,7 @@ h5 {
 	display: flex;
 }
 
-#imgBreak {
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	border: 1px solid black;
-}
+
 
 .content {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -232,6 +241,7 @@ h5 {
 	width: 300px;
 	margin-left: 50px;
 	height: auto;
+	
 	position: relative;
 }
 
