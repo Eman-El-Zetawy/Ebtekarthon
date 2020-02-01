@@ -16,11 +16,7 @@
 		<div class="container-fluid">
 
 			<a class="navbar-brand">
-				<img src="../images/logo.png" onclick="header()" alt="" ></a>
-
-			<!--this is button to responsive for ul>list below-->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span></button>
+				<img src="../images/logo.png" alt=""></a>
 
 			<!--Options-->
 			
@@ -39,10 +35,10 @@
 				<div class="col-12 form-input">
 					<form>
 						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Email">
+							<input id="email" type="email" class="form-control" placeholder="Email">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control" placeholder="Password ">
+							<input id="password" type="password" class="form-control" placeholder="Password ">
 						</div>
 						
 					</form>
@@ -50,33 +46,15 @@
 				
 				</div>
 			</div>
+			
 			<div class="col-12 forget">
-				<a href="#">Forget Password?</a>
+				<!-- <a href="#">Forget Password?</a> -->
+				<br>
+				<label id="error"></label>
 			</div>
 		</div>
-	<script src="../js/login.js"></script>
+		<script type="text/javascript"  src="../validator/node_modules/validator/validator.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="./login.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

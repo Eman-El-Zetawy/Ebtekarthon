@@ -1,6 +1,9 @@
 body {
 	background: url("../images/dev4.png") center bottom repeat-y;
 	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	color: #5649c0;
+	font-size: 20px;
 
 }
 

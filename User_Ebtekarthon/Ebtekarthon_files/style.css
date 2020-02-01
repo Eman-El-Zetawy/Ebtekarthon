@@ -571,7 +571,7 @@ section.event-promo-section {
   /*
      * Set a base background for 1x environments.
      */
-  background: #111 url("../upload/banners/1.jpg") center center no-repeat;
+  /* background: #111 url("./1.jpg") center center no-repeat;  */
   background-size: cover;
   /*
      * Create an @2x-ish media query.
@@ -1097,7 +1097,9 @@ section.register-section {
 /*------------------------------------------------- */
 section.about-section {
   padding-top: 90px;
-  background: url("../images/dev4.png") center bottom repeat-x; }
+  background: url("./dev4.png") center bottom repeat-x;
+}
+ }
   section.about-section p {
     margin-bottom: 20px; }
   section.about-section .video-box {
@@ -1415,7 +1417,8 @@ section.schedule-section {
   background: #2b2b2c; }
   section.schedule-section .schedule-box {
     padding: 100px 0;
-    background: url("../images/dev6.png") center top repeat-x; }
+     /* background: url("/Ebtekarthon/User_Ebtekarthon/gallery/dev6.png") center top repeat-x;  */
+    }
     section.schedule-section .schedule-box .title-section h1 {
       margin-bottom: 30px; }
     section.schedule-section .schedule-box .schedule-block {
@@ -1641,7 +1644,7 @@ section.schedule-section2 {
 section.schedule-section2.with-back-color {
   background: #2a2a2a; }
   section.schedule-section2.with-back-color .schedule-box {
-    background: url("../images/dev6.png") center top repeat-x;
+     /* background: url("/Ebtekarthon/User_Ebtekarthon/gallery/dev6.png") center top repeat-x; */
     margin-bottom: -165px;
     margin-top: 2px;
     z-index: 2;
@@ -3525,8 +3528,10 @@ section.contact-section {
       -moz-border-radius: 6px;
       -ms-border-radius: 6px;
       border-radius: 6px;
+      margin-top: 55px;
       padding: 50px 60px 20px;
-      background: url("../images/dev1.png"); }
+      /* background: url("/Ebtekarthon/User_Ebtekarthon/gallery/dev1.png");  */
+    }
       section.contact-section .contact-info .inner-contact-info i {
         display: inline-block;
         color: #2ecc71;
@@ -4371,3 +4376,16 @@ footer.third-style {
     width: 100%; }
   section.gallery-section ul.gallery-list li {
     width: 100%; } }
+
+
+
+    .logos{
+      width: 100%;
+      margin: 0;
+      padding: 0%;
+      border-radius: 50%;
+    }
+    .a{
+      width: 20%;
+      margin: 5px;
+    }

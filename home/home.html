@@ -16,6 +16,7 @@
 		<div class="container-fluid">
 
 			
+
 			<!--this is button to responsive for ul>list below-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,21 +59,29 @@
 		<div class="schedule-block">
 			<input id="fileInput" type="file" />
 			<div id="add">
-			<img class="imgform" src="../images/homIm.jpg" id="imgInp" alt="Avatar">
-			
+			<img class="imgform" src="http://localhost:3000/images/home/logo.png" id="imgInp" alt="Avatar">
+			<span class="l">Dimensions 1455X970</span><br><br>
 			<input type="text" placeholder="Title" id="title">
-			
+			<p id="error1"></p>
 			<input type="text" placeholder=" Location" id="location">
+			<p id="error2"></p>
 			
 			<input type="text" placeholder="Date" id="date">
+			<p id="error3"></p>
 		</div>
 			<hr>
 			<button id="buttonSave"> Save </button>
+			<p id="done"></p>
 			<hr>
 		</div>
 		</div>
 	</section>
 	<script src="home.js"></script>
+	<script type="text/javascript"  src="../validator/node_modules/validator/validator.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	
 </body>
 

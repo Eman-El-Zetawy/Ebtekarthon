@@ -1,6 +1,9 @@
 
  body{
 	background: url("../images/dev4.png") center bottom repeat-y;
+	text-align: center;
+	color: #5649c0;
+	font-size: 20px;
   
   }
   #navbarSupportedContent {
@@ -150,11 +153,20 @@
 		  display: none;
 	  }
 	  .form{
-		  display: block;
-		  margin: auto;
-		  width: 28%;
-		  padding-bottom: 20px;
-	  }
+		display: block;
+		margin: auto;
+		width:40%;
+		padding-bottom: 20px;
+	}
+	label {
+		font-size: 20px;
+		color: #5649c0;
+	
+	}
+	.img11{
+width: 28%;
+margin: auto;
+	}
 	  
 	  
   

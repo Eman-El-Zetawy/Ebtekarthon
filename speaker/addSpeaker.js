@@ -1,70 +1,67 @@
- 
-    const myHeader =new Headers();
-    myHeader.append('Content-Type', 'application/json');
-    
-    let n= document.getElementById("new");
-    let arr = [];
-    fetch('http://localhost:3000/speaker',{
-      meathod:'GET', 
-      headers : myHeader }).then( response=>response.json()).then(data=> { 
+const myHeader = new Headers();
+myHeader.append('Content-Type', 'application/json');
 
-        // let arr = [];
-          console.log(data) ; 
-          arr=data ;
-          arr.forEach(item=> {
-               RenderingSpeaker(item); 
-          });
-         
-      });
-    
-      let NewSpeaker= document.getElementById('newspeaker');
-  
-      function RenderingSpeaker(d){
-          console.log(d);
-          let add=`<div class="card">`+
-          `<img src='../images/IMG12.jpg' alt="Avatar">`+
-          `<div class="container">`+
-              `<h4><b>`+d.name+`</b></h4>`+
-              `<p>`+d.bio+`</p><br>`+
-            `<button class="button"  id=` + d.id + ` onclick ="DeleteSpeaker(this.id)"> <strong> DELETE </strong ></button></div></div>`;
-      console.log(d.id);
-  
-      NewSpeaker.innerHTML+= add;
-      
-    }
+let n = document.getElementById("new");
+let speakers = [];
+fetch('http://localhost:3000/speaker', {
+  meathod: 'GET',
+  headers: myHeader
+}).then(response => response.json()).then(data => {
+  console.log(data);
+  speakers = data;
+  RenderingSpeaker(speakers);
+});
 
-    function DeleteSpeaker(id)
-    {
-      console.log(id);
-      const myHeader = new Headers();
-      myHeader.append('Content-Type', 'application/json');
-   
-      
-        fetch('http://localhost:3000/speaker/',{
-          method: 'DELETE',
-          headers: myHeader,
-          body: JSON.stringify({
-            id: id
-          })
-        })
-        .then(res => {
-         console.log(res);
-          if (res.status === 200) {
-            
-           console.log(res.status);
-            arr.forEach((obj, index) => {
-             
-              if (obj.id == id) {
-                
-                arr.splice(index, 1);
-             }
-              }); 
-              NewSpeaker.innerHTML = "";
-             arr.forEach(obj => {
-               RenderingSpeaker(obj); 
-              });
+let NewSpeaker = document.getElementById('newspeaker');
 
-            }  
-           
-         });
-        }
+function RenderingSpeaker(speakers) {
+let html = '';
+  speakers.forEach(item => {
+    console.log(item);
+    html += `<div class="card">
+      <img src="http://localhost:3000${item.img}" alt="Avatar">
+      <div class="container">
+      <h4><b>${item.name}</b></h4>
+      <p>${item.bio}</p><br>
+      <button class="button" id='${item.id}' onclick 
+      ="DeleteSpeaker(this.id)">
+       <strong> DELETE </strong ></button></div></div>`;
+  });
+  NewSpeaker.innerHTML = html;
+
+}
+
+function DeleteSpeaker(id) {
+  console.log(id);
+  const myHeader = new Headers();
+  myHeader.append('Content-Type', 'application/json');
+
+
+  fetch('http://localhost:3000/speaker/', {
+      method: 'DELETE',
+      headers: myHeader,
+      body: JSON.stringify({
+        id: id
+      })
+    })
+    .then(res => {
+      console.log(res);
+      if (res.status === 200) {
+
+        console.log(res.status);
+        speakers.forEach((item, index) => {
+
+          if (item.id == id) {
+
+            speakers.splice(index, 1);
+          }
+        });
+        NewSpeaker.innerHTML = "";
+        
+          RenderingSpeaker(speakers);
+        
+
+      }
+
+    });
+}

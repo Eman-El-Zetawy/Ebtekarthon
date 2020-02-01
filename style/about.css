@@ -1,6 +1,10 @@
 
 body{
-  background: url("./dev4.png") center bottom repeat-y; }
+  background: url("./dev4.png") center bottom repeat-y;
+color: #5649c0; 
+font-size: 20px;
+text-align: center;
+}
 	#navbarSupportedContent {
 	flex-grow: 0;
 	font-size: 25px;
@@ -67,20 +71,12 @@ body{
 }
 
 section.about-section {
-    padding-top: 100px;
+    padding-top: 20px;
     text-align: center;
     }
     section.about-section textarea {
       margin: 10px   0; }
 
-
-        /* #Edit{
-            font-size: 20px;
-            color: #5649c0;
-            margin: 0 0 20px;
-            margin-left: 300px;
-            
-        } */
 
         .Description{
             box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
@@ -88,6 +84,8 @@ section.about-section {
             -moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
             -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
             border: none; 
+            border-radius: 10px;
+            padding-left: 10px;
             
         }
         label{
@@ -95,23 +93,17 @@ section.about-section {
             color: #5649c0;
            
         }
-        p{
-            font-size: 15px;
-            color: red;
-        }
 
-        button{
+        .button{
           cursor: pointer;
           background-color:  #5649c0;;
           font-size: 20px;
            color: white;
           width: 6.5%;
           border: none; 
-          width: 30%;
-          height:35px;
-        
-        
-
+          width: 40%;
+          height:40px;
+          border-radius: 7px;
         }
 
         input{
@@ -120,9 +112,37 @@ section.about-section {
           -moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
           -o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
           border: none; 
-          width: 30%;
-          height: 35px;
+          width: 40%;
+          height: 40px;
+          border-radius: 7px;
+          padding-left: 10px;
           
         }
+        .how{
+          width: 30px;
+          margin-left: -40px;
+        }
+        p{
+          color:  #fff;
+        }
+        .span{
+          color: #000;
+          background-color:#fff; 
+        }
+        .div{
+          background-color: rgb(173, 169, 169);
+          width: 40%;
+          border-radius: 5px;
+          font-size: large;
+          margin:10px  auto ;
+          padding: 7px ;
+          display: none;
+       
+        }
+        label {
+          font-size: 20px;
+          color: #5649c0;
         
+        }
+         
         

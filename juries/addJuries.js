@@ -1,42 +1,41 @@
  const myHeader = new Headers();
  myHeader.append('Content-Type', 'application/json');
  
- let arr = [];
+ let juries = [];
  fetch('http://localhost:3000/juries', {
    meathod: 'GET',
    headers: myHeader
  }).then(response => response.json()).then(data => {
-
-   // let arr = [];
    console.log(data);
-   arr = data;
-   arr.forEach(item => {
-     RenderingJuries(item);
-   });
+   juries = data;
+  
+     RenderingJuries(juries);
+  
 
  });
-console.log(arr);
- let juries = document.getElementById('newjuries');
+console.log( juries);
+ let addjuries = document.getElementById('newjuries');
 
- function RenderingJuries(data) {
-   console.log(data);
-   let add = `<div class="card">` +
-     `<img src="../images/IMG12.jpg" alt="Avatar">` +
-     `<div class="container">` +
-     `<h4><b>` + data.name + `</b></h4>` +
-     `<p>` + data.bio + `</p><br>` +
-     `<button class="button"  onclick ="DeleteJuries(this.id)" id=` + data.id + `> <strong> DELETE </strong ></button>
+ function RenderingJuries(juries) {
+  let html = '';
+   juries.forEach(item => {
+   html += `<div class="card">
+    <img src="http://localhost:3000${item.img}" alt="Avatar">
+    <div class="container">
+     <h4><b>${item.name}</b></h4>
+     <p>${item.bio}</p><br>
+     <button class="button"  onclick ="DeleteJuries(this.id)"
+      id=${item.id}> <strong> DELETE </strong ></button>
           </div>
       </div>`;
-    console.log(data.id);
-   juries.innerHTML += add;
+    });
+   addjuries.innerHTML = html;
    
 
  }
 
  function DeleteJuries(id) {
-   //let id = this.onclick;
-  //  let id = event.target.getAttribute('index');
+
    console.log(id);
    const myHeader = new Headers();
    myHeader.append('Content-Type', 'application/json');
@@ -53,18 +52,15 @@ console.log(arr);
        if (res.status === 200) {
          
         console.log(res.status);
-         arr.forEach((obj, index) => {
+        juries.forEach((obj, index) => {
           
            if (obj.id == id) {
              
-             arr.splice(index, 1);
+            juries.splice(index, 1);
           }
            }); 
            juries.innerHTML = "";
-          arr.forEach(obj => {
-            RenderingJuries(obj);
-          
-         });
+            RenderingJuries(juries);
 
         }  
        

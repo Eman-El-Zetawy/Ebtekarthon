@@ -5,30 +5,25 @@ function socialM() {
 const my =new Headers();
 my.append('Content-Type', 'application/json');
 
-const name =  document.getElementById("name") ;
+const name =  document.getElementById("name") ,
+ero = document.getElementById('error') ;
 const typeSocial=  document.getElementById("typeSocial") ;
 let type ="";
 
 const save = document.getElementById("save");
 
-save.addEventListener("keydown",function(e){
-    if(e.key==="Enter"){
-      main();
-    } });
 save.addEventListener("click" ,main) ; 
 
 function main(){
 console.log(name.value , typeSocial.value);
  let l = typeSocial.value ;
+ if(l==1){ type = "facebook.png"} 
+ if(l==2){ type = "youtube.jpeg"}  
+ if(l==3){ type = "twitter.jpeg"}
+ if(l==4){ type = "insta.jpeg"}
 
- if(l==0){ type = "null"}
- if(l==1){ type = "Facebook"}
- if(l==2){ type = "YouTube"}
- if(l==3){ type = "Twitter"}
- if(l==4){ type = "Instagram"}
-
-
- fetch('http://localhost:3000/socialMedia',{
+ if(!validator.isEmpty(name.value) && (l==1 || l==2 ||l==3 ||l==4)){
+fetch('http://localhost:3000/socialMedia',{
   method:'POST',
   headers : my , 
   body:JSON.stringify({
@@ -38,7 +33,12 @@ console.log(name.value , typeSocial.value);
    })
 }).then( response=>response.json()).then((data) => {
     console.log(data); 
-// socialM();
+ socialM();
   
-});  
+}); 
+ }
+ else {
+  ero.innerHTML = "Please, Enter the information correctly . It is empty . " ;
+ }
+
 };

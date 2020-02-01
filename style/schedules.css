@@ -71,21 +71,34 @@ body {
 	position: relative;
 	height: auto;
 	display: flex;
-	overflow: hidden;
+
+}
+
+.schedule-box {
+	margin-left: 70px;
+	margin-right: 70px;
+	width: 300px;
+	height: auto;
 }
 
 .schedule-post {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 	margin: 10px;
-	margin-top: 50px;
-	width: 20%;
+	width: 300px;
+	margin-left: 50px;
 	height: auto;
 	position: relative;
 }
 
 .schedule-post:hover {
-	box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	margin: 10px;
+	width: 300px;
+	margin-left: 50px;
+	height: auto;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 	position: relative;
 }
 
@@ -126,7 +139,7 @@ h6 {
 
 }
 
-.deleteDay {
+#deleteDay {
 
 	float: right;
 	display: flex;
@@ -145,25 +158,7 @@ h6 {
 
 
 }
-.deleteEvent{
-	float: right;
-	display: flex;
-	width: 30px;
-	height: 25px;
-	left: 15px;
-	outline: none;
-	border: none;
-	background-image: url(../images/delete.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	opacity: 1;
-	z-index: 0;
-	margin-right: 10px;
-	border-radius: 5px;
 
-
-
-}
 #edit {
 
 	width: 30px;
@@ -194,16 +189,15 @@ h6 {
 }
 
 #break {
-	width: 15%;
-	height: 8%;
-	border-radius: 50px;
-	display: flex;
+	width: 20%;
+	height: auto;
 	position: absolute;
 	margin-left: 12px;
 	background-image: url(../images/add.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
 h3 {
 	width: auto;
 	text-align: center;
@@ -223,14 +217,19 @@ h5 {
 	display: flex;
 }
 
-
+#imgBreak {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	border: 1px solid black;
+}
 
 .content {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	padding-left: 5px;
 	border-radius: 10px;
 	width: auto;
-
+	height: auto;
 
 }
 
@@ -241,13 +240,9 @@ h5 {
 	width: 300px;
 	margin-left: 50px;
 	height: auto;
-	
 	position: relative;
 }
 
-#schedule{
-	box-sizing: border-box;
-	display: flex;
-	margin-left: 20px;
-	position: relative;
+.post:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }

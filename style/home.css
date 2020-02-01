@@ -1,7 +1,8 @@
 body{
     background: url("./dev4.png") center bottom repeat-y;
     font-size: 20px;
-    color: #5649c0;
+	color: #5649c0;
+	text-align: center;
 }
 #navbarSupportedContent {
 	flex-grow: 0;
@@ -95,7 +96,8 @@ section.section {
           font-size: 20px;
            color: white;
           width: 100%;
-          border: none; 
+		  border: none; 
+		  border-radius: 5px;
 		}
 		.imgform{
 			border-radius: 15px;

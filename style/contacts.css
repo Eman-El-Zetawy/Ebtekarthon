@@ -170,12 +170,18 @@ label {
 
 }
 
+
+.l {
+	font-size: 20px;
+	color: #5649c0;
+
+}
 .save {
 	cursor: pointer;
 	background-color: #5649c0;
 	font-size: 20px;
 	color: white;
-	width: 30%;
+	width: 55%;
 	border: none;
 	border-radius: 5px;
 
@@ -187,7 +193,9 @@ input {
 	-moz-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
 	-o-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
 	border: none;
-	width: 30%; 
+	width: 55%; 
+	height: 40px;
+
 }
 .schedule-block {
 	margin-left: 50px;

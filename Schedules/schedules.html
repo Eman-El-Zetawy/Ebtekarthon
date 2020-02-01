@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<title>Schedule</title>
 	<link rel="stylesheet" href="../boot/css/bootstrap.min.css">
-	<link type="text/css" rel="stylesheet" href="../style/schedules.css" />
+	<link type="text/css" rel="stylesheet" href="./schedules.css" />
 	<link rel="stylesheet" href="../style/fonts.min.css">
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
-
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 
-			<a class="navbar-brand">
-				<img src="../images/logo.png" alt=""></a>
 
 			<!--this is button to responsive for ul>list below-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,17 +51,25 @@
 			</div>
 		</div>
 	</nav>
-			<div class="countainer"></div>
-			<div class="schedule" id="schedule"></div>
-					<div class="row" >
-			<div class="post">
-				<h2 id="create">Add Day</h2>
+			<div class="countainer">
+			<div  id="schedule">
+					</div>
+			<div class="schadd">
+				
 				<div class="content">
-					<input type="button" onclick="levelTwo()" id="add">	
-				</div>
+					<h2 id="create">Create Day</h2>
+			     <a href="createDay.html"> 
+					 	
+						<button  id="add" class="add">ADD DAY</button>
+				 </a>	 
 			</div>
 	</div>
+	</div>
 	
-	<script src="../js/schedule.js"></script>
+	<script src="./schedule.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+	
 </body></html>

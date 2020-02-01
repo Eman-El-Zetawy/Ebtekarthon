@@ -2,10 +2,14 @@ const inputfile = document.getElementById("fileInput"),
     imgInp = document.getElementById('imgInp'),
     title = document.getElementById('title'),
     location1 = document.getElementById('location'),
-    date = document.getElementById('date');
-  var   d64 = "";
-
-    renderhome() ;
+    date = document.getElementById('date'),
+    e1=document.getElementById("error1"),
+    e2=document.getElementById("error2"),
+    e3=document.getElementById("error3"),
+    ero =document.getElementById('done');
+  var   b64 = "";
+let  home = {};
+// // myheader.append('Authorization', `Bearer ${token}`);
 
 function readURL(input) {
     console.log(input.files && input.files[0]);
@@ -19,6 +23,7 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
 
 inputfile.addEventListener("change", function () {
     readURL(this);
@@ -35,44 +40,51 @@ inputfile.onchange = function () {
     };
     img.readAsDataURL(file);
 };
+const myheader = new Headers();
+    myheader.append('Content-Type', 'application/json');
+
+fetch('http://localhost:3000/home', {
+        method: 'GET',
+        headers: myheader
+    }) .then(response => response.json())
+    .then((data) => {
+        home = data[0];
+     console.log(home);
+        renderhome(home);
+    });
+
+// let token = document.cookie.replace(/(?:(?:^|.*;\s*)token\s*\=\s*([^;]*).*$)|^.*$/, "$1");;
+// console.log(token);
 
 document.getElementById('buttonSave').addEventListener('click', add);
 
 function add() {
-    console.log(b64);
-    const myheader = new Headers();
-    myheader.append('Content-Type', 'application/json');
+    // console.log(b64);
+    if(!validator.isEmpty(title.value)&&!validator.isEmpty(location1.value)&&!validator.isEmpty(date.value)){
+  
     fetch('http://localhost:3000/home', {
             method: 'PUT',
             headers: myheader,
             body: JSON.stringify({
-                photo: b64,
+                photo:b64 ,
                 title: title.value,
                 location: location1.value,
                 date: date.value
             })
-        })
-        .then(response => response)
+        }).then(response => response.json())
         .then((data) => {
-            console.log(data);
-            renderhome() 
+            ero.innerHTML = "Successfully Done" ; 
         })
+}else 
+{
+    ero.innerHTML = "Please, Enter the information correctly . It is empty . "
+}
 }
 
-function renderhome() {
-    const myheader = new Headers();
-    myheader.append('Content-Type', 'application/json');
-    fetch('http://localhost:3000/home', {
-            method: 'GET',
-            headers: myheader
-        })
-        .then(response => response.json())
-        .then((data) => {
-            console.log(data[0]);
-            imgInp.src = data[0].homeimg;
-            title.value = data[0].hometitle;
-            location1.value = data[0].homelocation;
-            date.value = data[0].homedate;
-       });
-
+function renderhome(home) {
+            console.log(home);
+            imgInp.src ='http://localhost:3000'+home.homeimg;
+            title.value = home.hometitle;
+            location1.value = home.homelocation;
+            date.value = home.homedate;
 }

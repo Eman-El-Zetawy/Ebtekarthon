@@ -1,7 +1,7 @@
 
  body{
   background: url("../images/dev4.png") center bottom repeat-y;
-
+  text-align: center;
 }
 #navbarSupportedContent {
 	flex-grow: 0;
@@ -152,13 +152,16 @@ section.speaking-section {
 	.form{
 		display: block;
 		margin: auto;
-		width: 28%;
+		width:40%;
 		padding-bottom: 20px;
 	}
+	label {
+		font-size: 20px;
+		color: #5649c0;
 	
+	}
+	.img11{
+width: 28%;
+margin: auto;
+	}
 	
-
-	
-	
-
-      
