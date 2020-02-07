@@ -123,20 +123,20 @@ section.about-section {
           margin-left: -40px;
         }
         p{
-          color:  #fff;
+          color:  #5649c0;
         }
         .span{
           color: #000;
           background-color:#fff; 
         }
         .div{
-          background-color: rgb(173, 169, 169);
+        border: 1px solid gray;
           width: 40%;
           border-radius: 5px;
           font-size: large;
           margin:10px  auto ;
           padding: 7px ;
-          display: none;
+       
        
         }
         label {

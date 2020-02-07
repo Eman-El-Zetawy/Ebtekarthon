@@ -7,13 +7,11 @@ myheader.append('Content-Type', 'application/json');
 myheader.append('Authorization', `Bearer ${token}`);
 
 
-const show = document.getElementById("div") , 
-   a= document.getElementById("how"),
-   ero = document.getElementById("error");
+const ero = document.getElementById("error");
 
-   a.addEventListener("click" , ()=>{
-       show.style="display: block;" ; 
-   }); 
+//    a.addEventListener("click" , ()=>{
+//        show.style="display: block;" ; 
+//    }); 
  
  function add() {
      const description = document.getElementById('description'),
